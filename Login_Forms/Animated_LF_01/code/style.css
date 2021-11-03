@@ -25,3 +25,19 @@ body{
     color: aliceblue;    
     font-weight: 500;
 }
+.box-style input[type ="text"],.box-style input[type ="password"]{
+    border: 0;    
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3E00FF;
+    padding: 10px 9px;
+    width: 200px;
+    outline: none;
+    color: #B5FFD9;
+    border-radius: 25px;
+    transition: 0.30s;
+
+}
+
