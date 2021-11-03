@@ -62,3 +62,7 @@ body{
     transition: 0.30s;
     cursor: pointer;
 }
+.box-style input[type ="submit"]:hover{
+    background: #AE00FB;
+    
+}
