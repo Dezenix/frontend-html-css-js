@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    background: #B5FFD9;
+
+}
+
+.box-style{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #170055;
+    text-align: center;
+    border-radius: 25px;
+ 
+
+}
+.box-style h1{
+    color: aliceblue;    
+    font-weight: 500;
+}
