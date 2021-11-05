@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    background: #B5FFD9;
+
+}
+
+.box-style{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #170055;
+    text-align: center;
+    border-radius: 25px;
+ 
+
+}
+.box-style h1{
+    color: aliceblue;    
+    font-weight: 500;
+}
+.box-style input[type ="text"],.box-style input[type ="password"]{
+    border: 0;    
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3E00FF;
+    padding: 10px 9px;
+    width: 200px;
+    outline: none;
+    color: #B5FFD9;
+    border-radius: 25px;
+    transition: 0.30s;
+
+}
+.box-style input[type ="text"]:focus,.box-style input[type ="password"]:focus{
+
+    width: 230px;    
+    border-color: #B5FFD9;
+
+}
+
+.box-style input[type ="submit"]{
+    border: 0;    
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #AE00FB;
+    padding: 10px 40px;
+    width: 140px;
+    outline: none;
+    color: aliceblue;
+    border-radius: 25px;
+    transition: 0.30s;
+    cursor: pointer;
+}
+.box-style input[type ="submit"]:hover{
+    background: #AE00FB;
+    
+}
