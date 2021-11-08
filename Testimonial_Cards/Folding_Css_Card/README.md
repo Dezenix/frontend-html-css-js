@@ -5,4 +5,4 @@
 
 ### Preview
 
-![](https://github.com/divyaa30/frontend-componets/blob/main/Folding-Card-Css-Animation/assets/prototype.gif)
+![](https://github.com/divyaa30/frontend-html-css-js/blob/main/Testimonial_Cards/Folding_Css_Card/assets/prototype.gif)
