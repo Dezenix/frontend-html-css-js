@@ -5,4 +5,4 @@
 
 ### Preview
 
-![](https://github.com/divyaa30/frontend-componets/blob/main/Animated-Login-Form/Assets/Login-Form%20Design%20New.gif)
+![](https://github.com/Dezenix/frontend-html-css-js/blob/main/Loader/word_animated_loader/assest/loader.gif)
