@@ -5,4 +5,4 @@
 
 ### Preview
 
-![](https://github.com/Dezenix/frontend-html-css-js/blob/main/Loader/word_animated_loader/assest/loader.gif)
+![](./assets/loader.gif)
