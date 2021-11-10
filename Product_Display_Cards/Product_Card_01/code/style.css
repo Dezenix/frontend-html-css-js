@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+
+
+}
+
+.mainConatiner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+
+.mainConatiner .boxWrapper:nth-child(1){
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: linear-gradient(209.38deg, #DD061C -6.35%, rgba(17, 17, 17, 0.89) 61.2%);
+    border-radius: 20px;
+    transform-style: preserve-3d;
+
+}
+.mainConatiner .boxWrapper:nth-child(2){
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #fff;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+
+}
+
+.mainConatiner .boxWrapper::before{
+    content: 'NIKE';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 6em;
+    font-weight: 900;
+    color: aliceblue;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mainConatiner .boxWrapper::after{
+    content: 'SHOES';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 4.7em;
+    font-weight: 900;
+    color: aliceblue;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mainConatiner .boxWrapper:hover::before,
+.mainConatiner .boxWrapper:hover::after{
+    opacity: 0.09;
+}
+
+.mainConatiner .boxWrapper .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    font-size: 1.7em;
+    font-weight: 800;
+    opacity: 0;
+    z-index: 10;
+
+}
+
+.mainConatiner .boxWrapper:hover .name{
+    top: 40px;
+    opacity: 1;
+}
+
+.mainConatiner .boxWrapper .buy{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 1.4em;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: aliceblue;
+    background: #C1081B;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: -10;
+
+}
+
+.mainConatiner .boxWrapper:hover .buy{
+    bottom: 40px;
+    opacity: 1;
+}
+
+.mainConatiner .boxWrapper .productImg{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 320px;
+    transition: 0.5s;
+    z-index: 150;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px) rotate(-15deg);    
+}
+
+.mainConatiner .boxWrapper:hover .productImg{
+    transform: translate3d(-50%,-50%,100px) rotate(-15deg);  
+}
