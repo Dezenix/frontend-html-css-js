@@ -23,6 +23,9 @@
   
 </div>
 
+<h2 align="center">Frontend HTML CSS JS</h1>
+So we are on a mission to make thinks easy and convinient for all the user who just want to save their time. This repository consist of all the developmnet Componets that are being used while coding a end to end webiste along with fully coded component there out in HTML, CSS and JS. Main goal is to save your time by providing the complete code snippet with fully responsiv desgin of all the component that you use on day to day coding. On the later stage the project is palnned to be get converted into the library so that the component created can directly be used by importing and calling throgh class. We always encourage the new ideas. Feel free to get in touch with us and join our discord server for the updates. 
+
 ## ⚒️ Contribution Guidelines
 
 Are we missing any of your favorite features, which you think you can add to it? We invite you to contribute to this project and improve it further.
