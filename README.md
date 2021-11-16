@@ -24,7 +24,8 @@
 </div>
 
 <h2 align="center">About the Repository</h2>
-So we are on a mission to make thinks easy and convinient for all the user who just want to save their time. This repository consist of all the developmnet Componets that are being used while coding a end to end webiste along with fully coded component there out in HTML, CSS and JS. Main goal is to save your time by providing the complete code snippet with fully responsiv desgin of all the component that you use on day to day coding. On the later stage the project is palnned to be get converted into the library so that the component created can directly be used by importing and calling throgh class. We always encourage the new ideas. Feel free to get in touch with us and join our discord server for the updates. 
+
+We are on a mission to make things easy and convenient for all the users who just want to save their time. This repository consists of all the development components that are being used while coding an end to end website along with fully coded components in HTML, CSS and JS. The main goal is to save your time by providing the complete code snippet with a fully responsive design of all the components that you may use in your development journey. At the later stage, the project is planned to be get converted into a library so that the components created can directly be used by importing and calling through classes. We always encourage new ideas. Feel free to get in touch with us and join our [discord server](https://discord.gg/F3TtF5AHKz) for updates.
 
 ## ⚒️ Contribution Guidelines
 
@@ -49,4 +50,3 @@ Please note that Open Source Design has a [Contributor Code of Conduct](https://
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) © Dezenix
 
 ![thankyou](https://user-images.githubusercontent.com/64855541/138309334-d499458a-5a91-4995-ae38-6f7228edc4dd.png)
-
