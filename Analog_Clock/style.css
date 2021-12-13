@@ -19,6 +19,15 @@ body {
     height: 160px;
   }
   
+  .whitee {
+    color: white;
+  }
+  .reed{
+    color: #d00;
+  }
+  .greeen{
+    color: green;
+  }
   .hours {
     left: 120px;
     font-size: 23.3333333333px;
@@ -106,9 +115,7 @@ body {
    
   
   #clock {
-  /*   background: #fff; */
     background: #282828;
-  /*   border: 15px solid #222; */
     border: 15px solid #282828;
     box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
                   inset 4px 4px 10px rgba(0,0,0,0.5),
@@ -121,7 +128,6 @@ body {
     margin: 100px auto;
   }
   
-  /* JavaScript pre-rotates these wrappers instead of the hands when getting the time at load. If it pre-rotates the hands, then the hands will not perform 1 turn at their normal speeds. */
   .hr-wrapper, .min-wrapper, .sec-wrapper {
     position: absolute;
     width: 320px;

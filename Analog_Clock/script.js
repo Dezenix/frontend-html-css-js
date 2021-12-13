@@ -1,4 +1,3 @@
- // current time
  var dateInfo = new Date();
  var hr = dateInfo.getHours() > 12 ? dateInfo.getHours() - 12 : dateInfo.getHours(),
    min = dateInfo.getMinutes(),
