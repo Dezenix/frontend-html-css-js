@@ -4,4 +4,5 @@
 <p align="left"> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>   </p>
 
 ## Preview
-![image](https://user-images.githubusercontent.com/69195262/145994013-15f82fd2-faf4-4bf3-873f-8f0c9ae79b68.png)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/69195262/146014794-b1573ab2-5b52-4f06-a998-2b6a3df283c1.gif)
+
