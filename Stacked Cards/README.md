@@ -1,8 +1,7 @@
-<h1> Stacked Cards </h1>
-<h2> Desktop View </h2>
-<h3> Before Hover</h3>
-<img src="https://i.ibb.co/SN8G8N5/Screenshot-1395.png" alt="Screenshot-1395" border="0">
-<h3> After Hover</h3>
-<img src="https://i.ibb.co/xX3K2vq/Screenshot-1396.png" alt="Screenshot-1396" border="0">
-<h2> Mobile View </h2>
-<img src="https://i.ibb.co/JRvYCdj/Screenshot-1398.png" alt="Screenshot-1398" border="0">
+# Stacked Cards
+<h3> Tech Stack Used <img src = "https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width = 32px> </h3>
+<p align="left"> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>   </p>
+<hr>
+
+### Preview
+![](./images/preview.gif)
