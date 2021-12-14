@@ -4,19 +4,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
+    background: #2e557c;
+}
+
+
+.parent{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #2e557c;
     transition:0.5s;
+    font-family: 'Poppins', sans-serif;
 }
 
-body::before{
+.parent::before{
     content: '';
     position: absolute;
     top: 0;
@@ -28,6 +32,7 @@ body::before{
     transition:0.5s;
     clip-path: circle(250px at center);
 }
+
 
 .container{
     position: relative;
@@ -85,7 +90,7 @@ body::before{
 }
 
 @media (max-width:1050px){
-    body::before{
+    .parent::before{
         clip-path:circle(0px at center);
 
     }
