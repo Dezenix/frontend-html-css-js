@@ -5,4 +5,4 @@
 
 ### Preview
 
-![](https://user-images.githubusercontent.com/72241207/145718983-74d2db54-8f77-43b0-a435-052a203eb0fe.png)
+![](https://github.com/DragonUncaged/frontend-html-css-js/blob/clock/Clock/Analog_Clock/assets/Analog-clock-demo.gif)
