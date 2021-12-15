@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition:0.5s;
+    font-family: 'Poppins', sans-serif;
+    background: #2e557c;
+}
+
+.parent::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #30bfa5;
+    transition:0.5s;
+    clip-path: circle(250px at center);
+}
+
+.img{
+    height: 150px;
+    width: 250px;
+    top: -40%;
+    left: 0;
+    border-radius: 10px;
+}
+
+.heading{
+    line-height: 50px;
+}
+
+.container{
+    position: relative;
+    width: 1100px;
+    height: 400px;
+}
+
+.container .card{
+    position: absolute;
+    top: calc(50% - 200px);
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    transform: translateX(-50%) translateY(calc(50px*var(--i))) rotate(40deg) skew(-20deg,-10deg) scale(0.6);
+    box-shadow: 25px 25px 100px rgba(0,0,0,0.2);
+    z-index: calc(var(--i)*-0.9);
+    transition:0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card:nth-child(2){
+    opacity: 0.8;
+}
+
+.container .card:nth-child(3){
+    opacity: 0.6;
+}
+
+.container:hover .card{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    opacity: 1;
+    transform: translateX(calc(-50% + calc(350px * var(--i)))) translateY(-50%);
+}
+
+.container .card .content{
+    position: relative;
+    padding: 25px;
+    color: #333;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(50px)
+}
+
+.container:hover .card .content{
+    opacity: 1;
+    transition-delay: calc(0.2s * var(--j));
+    transform: translateY(0)
+}
+
+@media (max-width:1050px){
+    .parent::before{
+        clip-path:circle(0px at center);
+
+    }
+
+    .container{
+        width: 100%;
+        height: initial;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .card{
+        position: relative;
+        top: initial;
+        left: initial;
+        transform: initial;
+        margin: 20px;
+        opacity: 1 !important;
+    }
+
+    .container:hover,
+    .container:hover .card{
+        position: relative;
+        top: initial;
+        left: initial;
+        transform: initial;
+    }
+
+    .container .card .content{
+        transform: initial;
+        opacity: 1;
+    }
+}
