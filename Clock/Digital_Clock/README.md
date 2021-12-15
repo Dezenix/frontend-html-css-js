@@ -5,4 +5,4 @@
 
 ### Preview
 
-![](https://github.com/DragonUncaged/frontend-html-css-js/blob/Digital-Clock/Clock/Analog_Clock/assets/Digital-clock-demo.gif)
+![](https://github.com/DragonUncaged/frontend-html-css-js/blob/Digital_Clock/Clock/Digital_Clock/assets/Digital-clock-demo.gif)
