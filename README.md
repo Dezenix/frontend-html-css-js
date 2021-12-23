@@ -30,6 +30,7 @@ We are on a mission to make things easy and convenient for all the users who jus
 ## 💯open source programs this repo has been part of
 <div align="center">
 <img src="https://user-images.githubusercontent.com/79747022/144800351-13fa1e9d-6417-4330-bc87-00d33404cc76.png" width="150px">
+<img src="https://user-images.githubusercontent.com/79747022/147199017-9afed0e7-744e-4e9e-ad6c-4bba5a43ed90.jpeg" width="100px">
 </div>
 
 ## ⚒️ Contribution Guidelines
