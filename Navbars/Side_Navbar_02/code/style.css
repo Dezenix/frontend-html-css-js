@@ -1,0 +1,96 @@
+body {
+    background-color: #dcdcdc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+details {
+    margin: 20px;
+}
+summary {
+    writing-mode: vertical-lr;
+    text-align: center;
+    padding: 12px 10px;
+    width: 23px;
+    height: 17px;
+    background-color: #dcdcdc;
+    border: 2px solid #555555;
+    border-radius: 4px;
+    color: #555555;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    transition: transform 200ms ease-in-out 0s;
+}
+summary::before,
+summary::after {
+    position: static;
+    top: 0;
+    left: 0;
+}
+summary::before {
+    content: "";
+}
+summary::after {
+    content: "III";
+}
+summary:hover {
+    transform: scale(1.1);
+}
+summary::marker {
+    font-size: 0;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+details[open] .menu {
+    animation-name: menuAnim;
+}
+details[open] summary::before {
+    content: "X";
+}
+details[open] summary::after {
+    content: "";
+}
+.menu {
+    height: 0;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: darkgray;
+    font-family: monospace;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    animation: menuAnim .2s ease-in-out forwards; 
+}
+.menu a {
+    padding: 15px 25px;
+    margin: 0 15px;
+    color: rgb(55, 55, 55);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    transition: filter 200ms linear 0s;
+}
+.menu a:nth-of-type(1) {
+    padding-top: 20px;
+}
+.menu a:nth-last-of-type(1) {
+    border-bottom: none;
+    padding-bottom: 20px;
+}
+.menu a:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+    color: rgb(35, 35, 35);
+}
+@keyframes menuAnim {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 315px;
+    }
+}
