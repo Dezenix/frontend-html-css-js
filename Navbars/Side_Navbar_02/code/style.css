@@ -3,10 +3,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
-details {
+.menuBox {
     margin: 20px;
 }
-summary {
+.icon {
     writing-mode: vertical-lr;
     text-align: center;
     padding: 12px 10px;
@@ -21,34 +21,34 @@ summary {
     outline: none;
     transition: transform 200ms ease-in-out 0s;
 }
-summary::before,
-summary::after {
+.icon::before,
+.icon::after {
     position: static;
     top: 0;
     left: 0;
 }
-summary::before {
+.icon::before {
     content: "";
 }
-summary::after {
+.icon::after {
     content: "III";
 }
-summary:hover {
+.icon:hover {
     transform: scale(1.1);
 }
-summary::marker {
+.icon::marker {
     font-size: 0;
 }
-summary::-webkit-details-marker {
+.icon::-webkit-details-marker {
     display: none;
 }
-details[open] .menu {
-    animation-name: menuAnim;
+.menuBox[open] .menu {
+    animation-name: openMenu;
 }
-details[open] summary::before {
+.menuBox[open] .icon::before {
     content: "X";
 }
-details[open] summary::after {
+.menuBox[open] .icon::after {
     content: "";
 }
 .menu {
@@ -63,7 +63,7 @@ details[open] summary::after {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    animation: menuAnim .2s ease-in-out forwards; 
+    animation: openMenu .3s ease-in-out forwards; 
 }
 .menu a {
     padding: 15px 25px;
@@ -86,7 +86,7 @@ details[open] summary::after {
     transition: 0.2s ease-out;
     color: rgb(35, 35, 35);
 }
-@keyframes menuAnim {
+@keyframes openMenu {
     0% {
       height: 0;
     }
