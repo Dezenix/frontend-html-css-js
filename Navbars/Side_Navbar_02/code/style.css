@@ -1,96 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: #dcdcdc;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
 }
-.menuBox {
-    margin: 20px;
+.navbar {
+    margin: 30px;
 }
 .icon {
-    writing-mode: vertical-lr;
-    text-align: center;
-    padding: 12px 10px;
-    width: 23px;
-    height: 17px;
-    background-color: #dcdcdc;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    padding: 20px 10px;
     border: 2px solid #555555;
     border-radius: 4px;
-    color: #555555;
-    cursor: pointer;
-    user-select: none;
-    outline: none;
-    transition: transform 200ms ease-in-out 0s;
 }
-.icon::before,
-.icon::after {
-    position: static;
-    top: 0;
-    left: 0;
+.bar {
+    height: 5px;
+    width: 100%;
+    background: #555555;
+    border-radius: 10px;
+    display: block;
+    transition: .5s ease;
 }
-.icon::before {
-    content: "";
+#bar1{
+    transform: translateY(-8px);
 }
-.icon::after {
-    content: "III";
+#bar3 {
+    transform: translateY(8px);
 }
-.icon:hover {
-    transform: scale(1.1);
+.change #bar1 {
+    width: 42px;
+    transform: rotateZ(45deg) translate(2px, 5px);
 }
-.icon::marker {
-    font-size: 0;
+.change #bar2 {
+    opacity: 0;
 }
-.icon::-webkit-details-marker {
-    display: none;
-}
-.menuBox[open] .menu {
-    animation-name: openMenu;
-}
-.menuBox[open] .icon::before {
-    content: "X";
-}
-.menuBox[open] .icon::after {
-    content: "";
+.change #bar3 {
+    width: 42px;
+    transform: rotateZ(-45deg) translate(2px, -5px);
 }
 .menu {
-    height: 0;
     width: fit-content;
     border-radius: 5px;
     background-color: darkgray;
+    font-size: 20px;
     font-family: monospace;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
-    margin-top: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    animation: openMenu .3s ease-in-out forwards; 
+    margin-top: 10px;
+    animation: openMenu .5s ease-in-out forwards;
+    transform-origin: top center;
+    display: none;
 }
-.menu a {
+.menu li {
+    list-style: none;
+    display: block;
+    margin: 10px 20px;
     padding: 15px 25px;
-    margin: 0 15px;
-    color: rgb(55, 55, 55);
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    text-decoration: none;
     text-align: center;
-    transition: filter 200ms linear 0s;
 }
-.menu a:nth-of-type(1) {
-    padding-top: 20px;
+.menu li a {
+    text-decoration: none;
+    color: rgb(55, 55, 55);
 }
-.menu a:nth-last-of-type(1) {
+.menu li:nth-last-child(1) {
     border-bottom: none;
     padding-bottom: 20px;
 }
-.menu a:hover {
+.menu li:hover {
     transform: scale(1.1);
-    transition: 0.2s ease-out;
+    transition: 0.2s ease;
     color: rgb(35, 35, 35);
+}
+.open {
+    display: block;
 }
 @keyframes openMenu {
     0% {
-      height: 0;
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
     }
     100% {
-      height: 315px;
+        transform: scaleY(1)
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

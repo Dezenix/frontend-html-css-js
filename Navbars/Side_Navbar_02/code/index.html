@@ -8,15 +8,22 @@
     <title>Navbar Style</title>
 </head>
 <body>
-    <details class="menuBox">
-        <summary class="icon"></summary>
-        <nav class="menu">
-            <a href="#link">Home</a>
-            <a href="#link">Services</a>
-            <a href="#link">Projects</a>
-            <a href="#link">Contact</a>
-            <a href="#link">About</a>
-        </nav>
+    <div class="navbar">
+        <div class="icon" id="icon" onclick="openMenu()">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
