@@ -27,6 +27,12 @@
 
 We are on a mission to make things easy and convenient for all the users who just want to save their time. This repository consists of all the development components that are being used while coding an end to end website along with fully coded components in HTML, CSS and JS. The main goal is to save your time by providing the complete code snippet with a fully responsive design of all the components that you may use in your development journey. At the later stage, the project is planned to be get converted into a library so that the components created can directly be used by importing and calling through classes. We always encourage new ideas. Feel free to get in touch with us and join our [discord server](https://discord.gg/F3TtF5AHKz) for updates.
 
+## 💯open source programs this repo has been part of
+<div align="center">
+<img src="https://user-images.githubusercontent.com/79747022/144800351-13fa1e9d-6417-4330-bc87-00d33404cc76.png" width="150px">
+<img src="https://user-images.githubusercontent.com/79747022/147199017-9afed0e7-744e-4e9e-ad6c-4bba5a43ed90.jpeg" width="100px">
+</div>
+
 ## ⚒️ Contribution Guidelines
 
 Are we missing any of your favorite features, which you think you can add to it? We invite you to contribute to this project and improve it further.
