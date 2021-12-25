@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
 *,
-*::after*::before {
-  margin: 0px;
-  padding: 0px;
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -15,7 +16,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2em;
   flex-direction: column;
   background: var(--primary-color);
 }
@@ -36,6 +36,19 @@ body {
   --blue-light: #87bbfe;
   --green-dark: #24b27e;
   --green-light: #aff1b6;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: var(--blue-light);
+  margin-bottom: 2em;
+}
+footer {
+  height: 100vh;
+  width: 100%;
+  background: var(--blue-light);
+  margin-top: 2em;
 }
 
 h1 {
