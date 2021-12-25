@@ -4,4 +4,4 @@
 <hr>
 
 ### Preview
-![](/preview.gif)
+![](./assets/preview.gif)
