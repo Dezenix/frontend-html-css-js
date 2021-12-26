@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: #dcdcdc;
-}
 .navbar {
     margin: 30px;
 }
@@ -23,7 +20,7 @@ body {
     background: #555555;
     border-radius: 10px;
     display: block;
-    transition: .5s ease;
+    transition: all .5s ease;
 }
 #bar1{
     transform: translateY(-8px);
