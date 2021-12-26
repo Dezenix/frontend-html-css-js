@@ -89,7 +89,7 @@
 .switch-toggle input[type="checkbox"]:checked+label::before{
     left: 50%;
     content: "ON";
-    color: #fff;
+    color: #1f1f1f ;
     background-color: #00ff22;
     box-shadow: -3px -3px 5px rgba(255,255,255,0.5),
                 3px 3px 5px #00ff22;
