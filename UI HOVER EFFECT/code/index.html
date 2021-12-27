@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Hover Card</title>
+</head>
+
+<body id="content">
+   
+        <div class="boxWrapper">
+            <div class="half-circle">
+                <div>
+                    <img src="../assets/parrot.jpg" alt="" class="parrot">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-text">
+                    <div>
+                        <p class="para">You want to know the difference between a master and a beginner? The master has
+                            failed more times than the beginner has even tried.</p>
+                    </div>
+    
+                    <div>
+                        <h4>MARVELLOUS MACAW</h4>
+                    </div>
+                </div>
+    
+                <div class="comma-div">
+                    <p class="comma">' '</p>
+                </div>
+            </div>
+    
+    </div>
+    
+    <script src="./js/tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".boxWrapper"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+</body>
+
+</html>
