@@ -1,0 +1,62 @@
+#content {
+    background-color: #f3f1fe;
+    align-items: center;
+}
+
+.parrot {
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    margin-top: -50%;
+    padding-left: 10px;
+}
+
+.card {
+
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.card-text {
+    width: 80%;
+    padding-left: 40px;
+    color: gray;
+    text-align: center;
+    padding-top: 100px;
+    z-index: 1000;
+}
+
+.para {
+    text-align: center;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    line-height: 2;
+    z-index: 1;
+}
+
+.half-circle {
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: -1px;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background: #f3f1fe;
+}
+
+.comma-div {
+    z-index: 999;
+    position: absolute;
+    font-size: 200px;
+    margin-top: -400px;
+    margin-left: 150px;
+    color: gray;
+    opacity: 0.1;
+}
