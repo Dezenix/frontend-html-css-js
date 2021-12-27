@@ -30,7 +30,7 @@ html {
     border: 1px solid white;
   }
   .accordion-bral .ac-label:hover {
-    background:rgb(13, 32, 45);
+    background:rgb(17, 42, 58);
   }
   .accordion-bral input + .ac-label  {
     -webkit-transition: all 0.3s ease-in-out;
@@ -63,7 +63,7 @@ html {
   .accordion-bral .article p {
     color: rgb(13, 32, 45);
     line-height: 23px;
-    font-size: 14px;
+    font-size: 16px;
     padding: 20px;
   }
   .accordion-bral input:checked ~ .article i {
@@ -111,11 +111,11 @@ html {
     height: auto;
     padding-right: 40px;
     cursor: pointer;
-    color: #777;
+    /* color; */
     line-height: 33px;
     font-size: 19px;
-    background: #EFEFEF;
-    border: 1px solid #CCC;
+    /* background: #EFEFEF; */
+    border: 1px solid white;
   }
     .accordion-bral i {
     position: absolute;
