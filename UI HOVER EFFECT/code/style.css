@@ -1,10 +1,11 @@
-body {
-    background: #f3f1fe;
+
+#content{
+    background-color: #f3f1fe;
     align-items: center;
+  
 }
 
-
-img {
+.parrot {
     border-radius: 50%;
     height: 130px;
     width: 130px;
