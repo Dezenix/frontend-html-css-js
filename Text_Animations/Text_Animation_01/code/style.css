@@ -1,0 +1,111 @@
+.main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.main-text {
+
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 0.15em cyan;
+    white-space: nowrap;
+    filter: blur(0.005em);
+    animation: vibration 2.5s linear forwards;
+}
+
+.animate-text {
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* -webkit-clip-path: polygon(10% 0%, 45% 0%, 70% 100%, 55% 100%); */
+    clip-path: polygon(10% 0%, 45% 0%, 70% 100%, 55% 100%);
+}
+
+.main-text::before, .main-text::after {
+
+    content: attr(data-text);
+    position: absolute;
+}
+
+.main-text::before {
+
+    animation: firstCrack 2.5s linear forwards;
+    /* -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%); */
+    clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+}
+
+.main-text::after {
+
+    animation: secondCrack 2.5s linear forwards;
+    /* -webkit-clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 70% 100%); */
+    clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+}
+
+@keyframes vibration {
+
+    5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
+
+        filter: blur(0.015em);
+        transform: translateY(0.015em) rotate(0deg);
+    }
+
+    10%, 30%, 40%, 50%, 70%, 80%, 90% {
+
+        filter: blur(0.01em);
+        transform: translateY(-0.015em) rotate(0deg);
+    }
+
+    20%, 60% {
+
+        filter: blur(0.03em);
+        transform: translate(-0.015em, 0.015em) rotate(0deg);
+    }
+
+    45%, 85% {
+
+        filter: blur(0.03em);
+        transform: translate(0.015em, -0.015em) rotate(0deg);
+    }
+
+    100% {
+
+        filter: blur(0.005em);
+        transform: translate(0) rotate(-0.5deg);
+    }
+}
+
+@keyframes firstCrack {
+
+    0%, 95% {
+
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+
+        transform: translate(-51%, -49%);
+    }
+}
+
+@keyframes secondCrack {
+
+    0%, 95% {
+
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+
+        transform: translate(-49%, -51%);
+    }
+}
