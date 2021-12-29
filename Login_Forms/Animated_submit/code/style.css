@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500&display=swap');
 
 #login_box {
     width: 330px;
@@ -8,7 +9,7 @@
     margin-top: 100px;
     padding: 20px;
     box-shadow: 5px 5px 5px grey, -5px 5px 5px grey;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  'Urbanist',Arial, Helvetica, sans-serif;
 }
 
 #login_box h1 {
@@ -42,6 +43,8 @@
 }
 
 #login_box .submit {
+    margin-top: 5px;
+    margin-left: 20px;
     transform: translateX(-10%);
     padding: 0 0;
     position: relative;
@@ -144,7 +147,7 @@
 #login_box .submit #sp4{
     left: 0;
     bottom: 100%;
-    width: 4px;
+    width: 5px;
     height: 100%;
     background: linear-gradient(360deg, transparent, #2693d9);
     animation: btn_anm4 1s linear infinite;
