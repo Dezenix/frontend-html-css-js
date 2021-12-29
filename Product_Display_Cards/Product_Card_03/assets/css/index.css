@@ -1,0 +1,225 @@
+.body {
+    font-size: 14px;
+    font-family: 'Maven Pro', sans-serif;
+    height: 100%;
+    color: #aaa;
+    background: #fff;
+}
+
+.body,
+.body::after,
+.body::before {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.product {
+    background-color: #fff;
+    max-width: 300px;
+    position: relative;
+    z-index: 15;
+    margin: 0 auto;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+    max-width: 100%;
+}
+
+.fig {
+    margin: 0;
+    line-height: 0;
+}
+
+.product .product-description {
+    position: relative;
+    z-index: 15;
+    background: #fff;
+    display: flex;
+}
+
+.product .product-description,
+.main {
+    zoom: 1;
+}
+
+.product .product-description::after,
+.main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.product .product-description .info {
+    padding: 15px;
+    color: #aaa;
+    font-size: 0.85rem;
+    width: 75%;
+    float: left;
+    
+}
+
+.product .product-description .info p {
+    margin: 0 0 15px;
+    line-height: 1.3em;
+}
+
+.product .product-sidebar .colors span a {
+    text-decoration: none;
+}
+
+.product .product-description .info h1 {
+    font-weight: 300;
+    color: #31353d;
+    margin: 0 0 5px;
+    font-size: 20px;
+}
+
+.product .product-description .price {
+    width: 25%;
+    float: left;
+    color: #9bb6aa;
+    font-size: 3.5em;
+    position: relative;
+    margin-top: 25px;
+}
+
+.product .product-description .price::before {
+    content: "$";
+    font-size: 0.35em;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.product .product-sidebar {
+    height: 100%;
+    background-color: #31353d;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: right 0.3s ease;
+    border-radius: 0 2px 2px 0;
+}
+
+.product .product-sidebar button {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 0.8em;
+    padding: 0.9em;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.product .product-sidebar .buy {
+    background: transparent url(../img/buy.png) no-repeat 15px;
+}
+
+.product .product-sidebar .info {
+    background: transparent url(../img/info.png) no-repeat 15px;
+}
+
+.product .product-sidebar .size {
+    background: transparent url(../img/sizes.png) no-repeat 15px;
+}
+
+.product .product-sidebar .colors {
+    background: transparent url(../img/colors.png) no-repeat 15px;
+}
+
+.product .product-sidebar .colors span {
+    margin-left: 40px;
+}
+
+.product .product-sidebar .colors:hover {
+    width: 130px;
+}
+
+.product .product-sidebar .colors .color {
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.product .product-sidebar .colors .black {
+    background-color: #000;
+    border-bottom: 2px solid #555;
+}
+
+.product .product-sidebar .colors .white {
+    background-color: #fff;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.product .product-sidebar .colors .red {
+    background-color: #ea1535;
+    border-bottom: 2px solid #ea566d;
+}
+
+.product .product-sidebar .colors .color:hover {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    transform: scsle(1.1);
+}
+
+.product .product-sidebar button span {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    white-space: nowrap;
+    margin-left: 30px;
+}
+
+.product .product-sidebar button:hover {
+    width: 130px;
+    background-color: #9bb6aa;
+    position: relative;
+    background-position: 15px center;
+    border-color: #9bb6aa;
+}
+
+.product .product-sidebar button:hover span {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.product:hover .product-sidebar {
+    right: -50px;
+}
+
+@media screen and (max-width: 480px) {
+    .product .product-sidebar {
+        width: 100%;
+        height: 50px;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        top: inherit;
+        border-radius: 0 0 2px 2px;
+        transition: bottom 0.3s ease;
+    }
+
+    .product:hover .product-sidebar {
+        bottom: -50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .product .product-sidebar {
+        bottom: -50px;
+    }
+}
