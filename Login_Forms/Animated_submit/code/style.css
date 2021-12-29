@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500&display=swap');
+
+#login_box {
+    width: 330px;
+    height: 230px;
+    background-color: #2b1710;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px grey, -5px 5px 5px grey;
+    font-family:  'Urbanist',Arial, Helvetica, sans-serif;
+}
+
+#login_box h1 {
+    color: #fff;
+    text-align: center;
+}
+
+#login_box .txt_field label{
+    color: #fff;
+    position: absolute;
+    transform: translateY(-250%);
+}
+
+#login_box .txt_field input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 20px;
+    color: #fff;
+    background-color: #2b1710;
+    margin-bottom: 23px;
+    border-bottom: solid 2px #2691d9;
+}
+
+#login_box .txt_field input:focus ~ label,
+#login_box .txt_field input:valid ~ label{
+    transform: translateY(-400%);
+    color: #2691d9;
+    font-size: 13px;
+    transition: 0.4s;
+}
+
+#login_box .submit {
+    margin-top: 5px;
+    margin-left: 20px;
+    transform: translateX(-10%);
+    padding: 0 0;
+    position: relative;
+    width: 30%;
+    height: 30px;
+}
+
+#login_box .submit .border{
+    padding: 2px 2px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#login_box .submit #login_box_submit{
+    transform: translateY(-105%);
+    margin-left: 2px;
+    width: 100%;
+    height: 30px;
+    background-color: #2b1710;
+    color: white;
+    border: 3px solid transparent;
+    outline: none;
+    align-items: center;
+}
+
+#login_box .submit #login_box_submit:hover{
+    background-color: #0099ff;
+    box-shadow: 0 0 20px #0099ff, 0 0 30px #0099ff, 0 0 40px #0099ff;
+}
+
+
+#login_box .submit span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+}
+
+#login_box .submit #sp1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #0099ff);
+    animation: btn_anm1 1s linear infinite;
+}
+
+@keyframes btn_anm1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+}
+
+#login_box .submit #sp2{
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #0099ff);
+    animation: btn_anm2 1s linear infinite;
+}
+
+@keyframes btn_anm2 {
+    0%,
+    25% {
+        top: -100%;
+    }
+    75%,
+    100%{
+        top: 100%;
+    }
+}
+
+#login_box .submit #sp3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, #009afa);
+    animation: btn_anm3 1s linear infinite;
+}
+
+@keyframes btn_anm3 {
+    0%,
+    50% {
+        right: -100%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+#login_box .submit #sp4{
+    left: 0;
+    bottom: 100%;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2693d9);
+    animation: btn_anm4 1s linear infinite;
+}
+
+@keyframes btn_anm4 {
+    0%,
+    75% {
+        bottom: -100%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
