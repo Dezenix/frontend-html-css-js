@@ -8,7 +8,7 @@
     --primary-color: #0a27aa;
     --secondary-color: #db6474;
 }
-body{
+.bdy{
     background-color: rgb(152, 152, 216);
     display: flex;
     align-items: center;
