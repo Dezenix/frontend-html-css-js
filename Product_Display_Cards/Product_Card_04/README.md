@@ -8,4 +8,4 @@
 
 ### Preview
 
-![](https://github.com/Dezenix/frontend-html-css-js/blob/main/Product_Display_Cards/Product_Card_04/assets/Product-Card-Preview.gif)
+https://user-images.githubusercontent.com/64855541/148549534-640bd587-e82c-4072-9d2c-251a12d7afd4.mp4
