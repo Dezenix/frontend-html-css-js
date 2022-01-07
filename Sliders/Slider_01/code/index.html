@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head Starts Here -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width = device-width, initial-scale=1.0">
+
+        <title>Range Slider</title>
+        
+        <!-- Link to style sheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <!-- Body Starts Here -->
+    <body class="main">
+        <div class="container">
+            <div class="range-slider">
+                <span id="rs-bullet" class="rs-label" onresize="showSliderValue()">0</span>
+                <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="200"> 
+            </div>
+
+            <div class="box-minmax">
+                <span class="min-value">0</span>
+                <span class="max-value">200</span>
+            </div>
+        </div>
+
+        <!-- Link to JavaScript file -->
+        <script src="script.js"></script>
+    </body>
+    <!-- Body End Here -->
+</html>
