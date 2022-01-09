@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <!-- Head Starts Here -->
+    <head>
+        <meta charset = "UTF-8" \>
+        <meta name = "description" content = "" \>
+        <meta name = "keywords" content = "" \>
+        <meta name = "author" content = "" \>
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0" \>
+
+        <title>Registration Form</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <!-- Body Starts Here -->
+    <body class="main">
+        <div class="heading">
+            <h1>Registration Form</h1>
+        </div>
+
+        <form class="form-container">
+
+            <!-- First Name -->
+            <div class="input-container">
+                <label class="lables" for="f-name">First Name</label>
+                <div class="inputs">
+                    <span class="icons">
+                        <i class="fas fa-user fa-2x"></i>
+                    </span>
+                    <input class="input-fields" type="text" name="firstName" id="f-name" placeholder="First Name" required autoComplete="off" />
+                </div>
+            </div>
+
+            <!-- Last Name -->
+            <div class="input-container">
+                <label class="lables" for="l-name">Last Name</label>
+                <div class="inputs">
+                    <span class="icons">
+                        <i class="fas fa-user fa-2x"></i>
+                    </span>
+                    <input class="input-fields" type="text" name="lastName" id="l-name" placeholder="Last Name" autoComplete="off" />
+                </div>
+            </div>
+
+            <!-- Department -->
+            <div class="input-container">
+                <label class="lables" for="departm">Department / Office</label>
+                <div class="inputs">
+                    <span class="icons">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </span>
+
+                    <select class="departmentSelector" required>
+                        <option value="">Select Your Department/Office</option>
+                        <option value="Engineering">Department of Engineering</option>
+                        <option value="Agriculture">Department of Agriculture</option>
+                        <option value="Accounting">Accounting Office</option>
+                        <option value="Tresurer">Tresurer's Office</option>
+                        <option value="MPDC">MPDC</option>
+                        <option value="MCTC">MCTC</option>
+                        <option value="MCR">MCR</option>
+                        <option value="Mayor">Mayor's Office</option>
+                        <option value="Tourism">Tourism Office</option>
+                    </select>
+
+                    <!-- <input class="input-fields" type="text" name="department" id="departm" placeholder="Select Your Department/Office" /> -->
+                </div>
+            </div>
+
+            <!-- User Name -->
+            <div class="input-container">
+                <label class="lables" for="u-name">Username</label>
+                <div class="inputs">
+                    <span class="icons">
+                        <i class="fas fa-user fa-2x"></i>
+                    </span>
+                    <input class="input-fields" type="text" name="userName" id="u-name" placeholder="Username" required autoComplete="off" />
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="input-container">
+                <label class="lables" for="pass">Password</label>
+                <div class="inputs">
+                    <span class="icons">
+                        <i class="fas fa-user fa-2x"></i>
+                    </span>
+                    <input class="input-fields" type="password" name="password" id="pass" placeholder="Password" required autoComplete="off" />
+                </div>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="input-container">
+                <label class="lables" for="cnf-pass">Confirm Password</label>
+                <div class="inputs">
+                    <span class="icons">
+                        <i class="fas fa-user fa-2x"></i>
+                    </span>
+                    <input class="input-fields" type="password" name="confirmPassword" id="cnf-pass" placeholder="Confirm Password" required autoComplete="off" />
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="input-container">
+                <label class="lables" for="email">E-Mail</label>
+                <div class="inputs">
+                    <span class="icons">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </span>
+                    <input class="input-fields" type="email" name="eMail" id="email" placeholder="Email Address" required autoComplete="off" />
+                </div>
+            </div>
+
+            <!-- Contact Number -->
+            <div class="input-container">
+                <label class="lables" for="contact">Contact No.</label>
+                <div class="inputs">
+                    <span class="icons">
+                        <i class="fas fa-phone-alt fa-2x"></i>
+                    </span>
+                    <input class="input-fields" type="text" name="contactNumber" id="contact" placeholder="(639)" required autoComplete="off" />
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="input-container">
+                <div class="submit">
+                    <button type="submit">
+                        SUBMIT
+                        <span class="submit-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </span>
+                    </i></button>
+                </div>
+            </div>
+
+        </form>
+
+        <script src="https://kit.fontawesome.com/5d4942fdb5.js" crossorigin="anonymous"></script>
+    </body>
+</html>
