@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sodoku</title>
+    <link
+      rel="stylesheet"
+      href="C:\Users\sachi\OneDrive\Desktop\sodoku\styles.css"
+    />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 id="A">SUDOKU</h1>
+      <div id="setup-game">
+        <div id="diff">
+          <h2 id="B">Choose difficulty:</h2>
+          <label id="label">
+            <input
+              type="radio"
+              id="diff-1"
+              name="diff"
+              value="easy"
+              checked
+            />Easy</label
+          >
+          <label id="label">
+            <input
+              type="radio"
+              id="diff-2"
+              name="diff"
+              value="easy"
+            />Medium</label
+          >
+          <label id="label">
+            <input
+              type="radio"
+              id="diff-3"
+              name="diff"
+              value="easy"
+            />Hard</label
+          >
+        </div>
+        <div id="time">
+          <h2 id="B">Choose time:</h2>
+          <label id="label">
+            <input type="radio" id="time-1" name="time" value="five" checked />5
+            min</label
+          >
+          <label id="label">
+            <input type="radio" id="time-2" name="time" value="ten" />10
+            min</label
+          >
+          <label id="label">
+            <input type="radio" id="time-3" name="time" value="fifteen" />15
+            min</label
+          >
+        </div>
+        <div id="theme">
+          <h2 id="B">Choose theme:</h2>
+          <label id="label"
+            ><input
+              type="radio"
+              id="theme-1"
+              name="theme"
+              value="light"
+              checked
+            />light</label
+          >
+          <label id="label"
+            ><input
+              type="radio"
+              id="theme-2"
+              name="theme"
+              value="Dark"
+            />Dark</label
+          >
+        </div>
+      </div>
+      <button id="start">New Game</button>
+    </header>
+    <div id="stats">
+      <p id="timer"></p>
+      <p id="lives"></p>
+    </div>
+    <div ig="game">
+      <div id="board"></div>
+
+      <div id="number-container" class="hidden">
+        <p id="one">1</p>
+        <p id="two">2</p>
+        <p id="three">3</p>
+        <p id="four">4</p>
+        <p id="five">5</p>
+        <p id="six">6</p>
+        <p id="seven">7</p>
+        <p id="eight">8</p>
+        <p id="nine">9</p>
+      </div>
+    </div>
+  </body>
+</html>

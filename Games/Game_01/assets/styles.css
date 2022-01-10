@@ -1,0 +1,107 @@
+.hidden {
+  display: none;
+}
+body.dark {
+  background-color: rgb(45, 100, 117);
+  color: white;
+}
+.header {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-bottom: 1px solid green;
+}
+#A {
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#B {
+  font-size: 27px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#label {
+  font-size: 23px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#start {
+  background: #ecf4ff;
+
+  border-radius: 50em;
+  color: green;
+  margin-top: 2em;
+  top: 30em;
+  width: 17%;
+  height: 3em;
+  text-align: center;
+  z-index: 6;
+}
+#setup-game {
+  display: flex;
+  justify-content: center;
+}
+#setup-game > * {
+  margin-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+p#timer {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+p#lives {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+#game {
+  display: flex;
+  justify-content: center;
+}
+#number-container > p {
+  border: 1px solid black;
+  border-radius: 20%;
+  width: 60px;
+  height: 60px;
+  font-size: 40pt;
+  margin-left: 1200px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#board {
+  padding-top: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  margin: 0 315px 500px;
+  width: 600px;
+  height: 100px;
+  float: left;
+}
+.tile {
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin: 0px;
+  vertical-align: middle;
+  font-size: 40pt;
+}
+p.selected {
+  background-color: lightblue;
+}
+p.incorrect {
+  color: red;
+}
+.rightborder {
+  border-right: 4px solid black;
+}
+.bottomborder {
+  border-bottom: 4px solid black;
+}
