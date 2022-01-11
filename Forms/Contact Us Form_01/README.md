@@ -5,4 +5,4 @@
 <hr>
 
 ### Preview
-![](./assets/preview.gif)
+![Untitled (2)](https://user-images.githubusercontent.com/82764912/148917840-babca90b-3816-4816-b7e9-aaeb6b6ba85e.gif)
