@@ -1,0 +1,293 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600);
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo);
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: "entypo", sans-serif;
+    padding-right: 10px;
+}
+
+:root{
+    --green: #7bc087;
+    --dark-green: #4c8254;
+    --white: white;
+    --grey: #394141;
+    --light-grey: #8e9699;
+    --blue:#51b2d6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    background: #829292;
+    min-height: 100vh;
+}
+
+.body ul {
+    list-style: none;
+}
+
+.body a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+#browser {
+    color: var(--white);
+    width: 100%;
+    -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#browser-bar {
+    background: var(--grey);
+    width: 100%;
+    padding: 8px;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 0.9em;
+    position: relative;
+}
+#browser-bar p {
+    text-align: center;
+}
+#browser-bar .circles {
+    border-radius: 10px;
+    height: 13px;
+    width: 13px;
+    float: left;
+    margin-left: 7px;
+    margin-top: 3px;
+}
+
+.arrow {
+    position: absolute;
+    right: 3px;
+    top: 6px;
+    font-size: 1.2em;
+    color: var(--light-grey);
+}
+
+#content {
+    background: #454f4f;
+}
+#content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#content #left,
+#content #right {
+    height: 100%;
+}
+#content #left {
+    float: left;
+    width: 75%;
+    background: var(--green);
+}
+@media all and (max-width: 780px) {
+    #content #left {
+        width: 100%;
+    }
+}
+#content #left #map {
+    height: 388px;
+    position: relative;
+    background-image: url("http://f.cl.ly/items/452R3S1440221Z3m372j/israel.png");
+    background-size: cover;
+}
+#content #left #map p {
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+#content #left #map .zoom {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 2px;
+    height: 70px;
+    background: var(--white);
+}
+#content #left #map .zoom:before,
+#content #left #map .zoom:after {
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    color: var(--green);
+    background: var(--white);
+    width: 20px;
+}
+#content #left #map .zoom:before {
+    content: "+";
+    top: -10px;
+    right: -8px;
+}
+#content #left #map .zoom:after {
+    content: "-";
+    bottom: -10px;
+    right: -8px;
+}
+#content #left #map .map-locator {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border: solid 2px var(--white);
+}
+#content #left #map .map-locator:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    background: var(--white);
+    border-radius: 5px;
+}
+#content #left #map .map-locator .tooltip {
+    position: absolute;
+    color: var(--grey);
+    left: 50px;
+    top: -10px;
+    background: var(--white);
+    font-size: 0.8em;
+    font-weight: 600;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#content #left #map .map-locator .tooltip:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 14px;
+    border-right: solid var(--white) 10px;
+    border-top: solid transparent 8px;
+    border-bottom: solid transparent 8px;
+}
+#content #left #map .map-locator .tooltip [class*="entypo-"] {
+    min-width: 25px;
+    display: inline-block;
+    text-align: center;
+    border-right: solid thin #ccc;
+    margin-right: 5px;
+}
+#content #left #map .map-locator .tooltip li {
+    border-bottom: solid thin #ccc;
+    padding: 10px;
+    white-space: nowrap;
+}
+#content #left #map .map-locator .tooltip li a {
+    color: var(--blue);
+}
+#content #left #map .map-locator .tooltip li:hover [class*="entypo-"] {
+    color: var(--blue);
+}
+#content #left ul#location-bar {
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+#content #left ul#location-bar li {
+    display: table-cell;
+    padding: 15px;
+    background: #5fa269;
+    border-right: solid thin #7fb587;
+}
+#content #left ul#location-bar li:last-of-type {
+    border-right: 0;
+}
+#content #left ul#location-bar li:hover {
+    background: var(--dark-green);
+}
+#content #left ul#location-bar .active {
+    background: var(--dark-green);
+}
+#content #right {
+    float: left;
+    width: 25%;
+    background: #454f4f;
+    font-size: 0.75em;
+    padding: 15px;
+}
+@media all and (max-width: 780px) {
+    #content #right {
+        width: 100%;
+    }
+}
+#content #right p {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#content #right a:hover {
+    color: var(--blue);
+}
+#content #right #social {
+    display: table;
+    width: 100%;
+}
+#content #right .social {
+    display: table-cell;
+    text-align: center;
+}
+#content #right form {
+    border-top: solid thin var(--light-grey);
+    border-bottom: solid thin var(--light-grey);
+    margin: 20px 0;
+    padding: 20px 0;
+}
+#content #right form input,
+#content #right form textarea {
+    background: var(--grey);
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    color: var(--white);
+}
+#content #right form input:last-of-type,
+#content #right form textarea:last-of-type {
+    margin-bottom: 0;
+}
+#content #right form input[type="submit"],
+#content #right form textarea[type="submit"] {
+    text-transform: uppercase;
+    background: var(--green);
+    width: 50%;
+    color: var(--white);
+    margin-top: 5px;
+}
+#content #right form input[type="submit"]:hover,
+#content #right form textarea[type="submit"]:hover {
+    background: #58b068;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#content #right form input[type="textarea"],
+#content #right form textarea[type="textarea"] {
+    min-height: 75px;
+    vertical-align: text-top;
+}
+#content #right p.other {
+    font-size: 0.7;
+    margin-bottom: 5px;
+    text-transform: lowercase;
+    font-weight: 100;
+}
+#content #right p.other,
+#content #right p.other a {
+    color: var(--light-grey);
+}
