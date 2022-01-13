@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+.parent--container {
   font-family: 'Playfair Display', serif;
   background: #fdfdea;
   transition: all 2s ease;
