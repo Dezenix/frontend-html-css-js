@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(130 231 255);
+        }
+        
+        #emailsub {
+            background-color: white;
+            color: rgb(30, 196, 238);
+            margin-top: 20%;
+            margin-left: 50%;
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            width: 8%;
+            transition: 1s;
+        }
+        
+        #input {
+            background-color: white;
+            color: black;
+            margin-left: 45%;
+            margin-top: 20%;
+            padding: 15px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            width: 18%;
+            outline: none;
+            transition: 1s;
+        }
+        
+        #send {
+            margin-left: -5%;
+            width: 5%;
+            padding: 12px;
+            position: absolute;
+            margin-top: 20%;
+            border-radius: 50px;
+            background-color: skyblue;
+            color: white;
+            /* font-size: 13px; */
+            border: none;
+            cursor: pointer;
+            box-shadow: -6px 5px 11px white inset;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="button">
+        <button id="emailsub" onclick="sub()"><strong>Notify Me</strong></button></div>
+</body>
+<script>
+    function sub() {
+        var input = document.createElement("input");
+        var button = document.getElementById("emailsub");
+        input.setAttribute("type", "email");
+        input.setAttribute("id", "input");
+        input.setAttribute("placeholder", "Email");
+        var send = document.createElement("button");
+        send.setAttribute("id", "send");
+        send.innerHTML = "send";
+        //  document.getElementById("sub ").innerHTML = " ";
+        document.getElementById("button").replaceChild(input, button);
+        document.getElementById("button").appendChild(send);
+
+    }
+</script>
+
+</html>
