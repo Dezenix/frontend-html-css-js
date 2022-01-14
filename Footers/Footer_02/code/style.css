@@ -1,0 +1,134 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: fit-content;
+    list-style-type: none;
+}
+#body{
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+}
+.footer {
+    display: flex;
+    width: 100vw;
+    background-color: rgb(222, 93, 131);
+    color: white;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+}
+.icon {
+    padding: 30px;
+    color:white;
+}
+.cc-rockmenu {
+	text-align:center;
+}
+
+.cc-rockmenu .rolling {
+  display: inline-block;
+  cursor:pointer;
+  width: 52px;
+  height: 52px;
+  text-align:left;
+  overflow: hidden;
+  background: white;
+  transition: all 0.4s ease-out;
+  white-space: nowrap;
+}
+.cc-rockmenu .rolling:hover {
+  width: 300px;
+}
+.cc-rockmenu .rolling .rolling_icon {
+  float:left;
+  z-index: 9;
+  width: 52px;
+  background-color: rgb(222, 93, 131);
+  height: 52px;
+  margin: 0 10px 0 0;
+}
+
+.cc-rockmenu .rolling .rolling_icon:hover .rolling {
+  width: 300px;
+}
+
+.cc-rockmenu .rolling i.fa {
+    font-size: 24px;
+    padding: 15px;
+}
+.cc-rockmenu .rolling span {
+    color: black;
+    display: block;
+    font-weight: bold;
+    padding: 5px 10px 5px;
+}
+.cc-rockmenu .rolling li {
+    display: inline-block;
+}
+.cc-rockmenu .rolling li a {
+    color: black;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.cc-rockmenu .rolling li a:hover{
+	color:rgb(222, 93, 131);	
+}
+
+.cc-rockmenu .rolling li a:before{
+   content:"\00bb";
+}
+
+.cc-rockmenu .rolling p {
+	margin:0;
+}
+
+/* Rolling Animated Menu*/
+.rollingAnimated ul {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 44%;
+}
+.rollingAnimated ul li {
+    float:left;
+    list-style: outside none none;
+    margin: 0 25px 0 0;
+}
+
+.rollingAnimated a {
+    color: #fff;
+    display: inline-block;
+    font-family: "Lato",Arial,sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 65px;
+    margin-top: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.1, 0.1, 0.5, 1.4) 0s;
+}
+
+.rollingAnimated a:hover {
+  margin-top: -65px;
+}
+
+.rolling_icon:hover{
+  background: cornflowerblue !important;
+}
+
+.rollingAnimated a:after {
+  content: attr(data-text);
+  display: block;
+  color: #11decd;
+}

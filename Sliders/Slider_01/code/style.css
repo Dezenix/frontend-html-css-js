@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+
+    height: 100vh;
+    background-color: black;
+    font-family: sans-serif;
+    background: linear-gradient(180deg, red 0%, blueviolet 100%) no-repeat;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.range-slider {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+}
+
+.rs-range {
+
+    margin-top: 5vmin;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.rs-range:focus {
+
+    outline: none;
+}
+
+.rs-range::-webkit-slider-runnable-track {
+
+    width: 100%;
+    height: 0.25vh;
+    cursor: pointer;
+    box-shadow: none;
+    background: white;
+}
+
+.rs-range::-moz-range-track {
+
+    width: 100%;
+    height: 0.25vh;
+    cursor: pointer;
+    box-shadow: none;
+    background: white;
+}
+
+.rs-range::-webkit-slider-thumb {
+
+    box-shadow: none;
+    border: 0px solid white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    height: 6vmin;
+    width: 3vmin;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3vmin;
+}
+
+.rs-range::-moz-range-thumb {
+
+    box-shadow: none;
+    border: 0px solid white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    height: 6vmin;
+    width: 3vmin;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3vmin;
+}
+
+.rs-label {
+
+    position: relative;
+    transform-origin: center center;
+    display: block;
+    width: 3em;
+    height: 3em;
+    background: transparent;
+    border-radius: 50%;
+    line-height: 5vh;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3vmin;
+    box-sizing: border-box;
+    border: 2px solid white;
+    margin-left: -6vmin;
+    left: attr(value);
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 5vmin;
+}
+
+.rs-label::after {
+
+    content: "kg";
+    display: block;
+    font-size: 4vmin;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    margin-top: -0.8vmin;
+}
+
+.box-minmax {
+
+    margin-top: 5vmin;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 4vmin;
+    font-weight: bold;
+    color: white;
+}
