@@ -1,8 +1,8 @@
 function clock(){
-    let hour = document.getElementById("hour");
-    let minute = document.getElementById("minute");
-    let seconds = document.getElementById("seconds");
-    let ampm = document.getElementById("ampm");
+    const hour = document.getElementById("hour");
+    const minute = document.getElementById("minute");
+    const seconds = document.getElementById("seconds");
+    const ampm = document.getElementById("ampm");
 
     let h = new Date().getHours();
     let m = new Date().getMinutes();
