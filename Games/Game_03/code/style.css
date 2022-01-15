@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 } 
-body {
+.body-container {
     height: 100vh;
     width: 100vw;
     display: flex;
