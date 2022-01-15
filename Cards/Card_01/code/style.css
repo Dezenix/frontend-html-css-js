@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background: #d22222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cloud img{
+    width: 60px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfdfd;
+    width: 355px;
+    height: 125px;
+    margin: 150px auto;
+    border-radius: 9px;
+    padding: 25px;
+    box-shadow: 0px 31px 35px -26px #080c21;
+}
+.date{
+    font-size: 14px;
+   font-weight: bold;
+   color: rgba(0,0,0,0.5);
+}
+.city{
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 5px;
+    color: rgba(0,0,0,0.7);
+}
+.cloud{
+    font-size: 71px;
+    color: rgba(0,0,0,0.9);
+}
