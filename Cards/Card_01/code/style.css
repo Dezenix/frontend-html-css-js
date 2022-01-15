@@ -3,7 +3,7 @@
     margin: 0px;
     outline: none;
 }
-html,body{
+.body{
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
     background: #d22222;
