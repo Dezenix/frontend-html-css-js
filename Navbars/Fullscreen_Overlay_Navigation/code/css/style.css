@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent--container {
+  font-family: 'Playfair Display', serif;
+  background: #fdfdea;
+  transition: all 2s ease;
+}
+.main--heading {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.author--name {
+  font-size: 1.5em;
+}
+.container .nav--container {
+  background: #7c9c7a;
+  height: 10em;
+  width: 10em;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%) scale(0.2);
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+.container .nav--container nav {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  transition: all 0.5s 1s ease;
+}
+.container .nav--container nav .nav--links--container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+.container .nav--container nav .nav--links--container .nav--links {
+  color: #fefefe;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 0.5em;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+}
+.container .nav--container nav .nav--links--container .nav--links::after {
+  content: '';
+  position: absolute;
+  inset: 0 0 0 0;
+  width: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #fdfdea;
+}
+.container
+  .nav--container
+  nav
+  .nav--links--container
+  .nav--links:nth-child(1):hover {
+  color: #7c9c7a;
+}
+.container
+  .nav--container
+  nav
+  .nav--links--container
+  .nav--links:nth-child(1):hover::after {
+  content: 'Home';
+  width: 100%;
+  left: 0;
+  animation: afterAnime 0.3s forwards;
+}
+.container
+  .nav--container
+  nav
+  .nav--links--container
+  .nav--links:nth-child(2):hover {
+  color: #7c9c7a;
+}
+.container
+  .nav--container
+  nav
+  .nav--links--container
+  .nav--links:nth-child(2):hover::after {
+  content: 'Projects';
+  width: 100%;
+  transform: translateX(0%);
+  animation: afterAnime 0.3s forwards;
+}
+.container
+  .nav--container
+  nav
+  .nav--links--container
+  .nav--links:nth-child(3):hover {
+  color: #7c9c7a;
+}
+.container
+  .nav--container
+  nav
+  .nav--links--container
+  .nav--links:nth-child(3):hover::after {
+  content: 'About';
+  width: 100%;
+  transform: translateX(0%);
+  animation: afterAnime 0.3s forwards;
+}
+.container
+  .nav--container
+  nav
+  .nav--links--container
+  .nav--links:nth-child(4):hover {
+  color: #7c9c7a;
+}
+.container
+  .nav--container
+  nav
+  .nav--links--container
+  .nav--links:nth-child(4):hover::after {
+  content: 'Contacts';
+  width: 100%;
+  transform: translateX(-100%);
+  animation: afterAnime 0.3s forwards;
+}
+@keyframes afterAnime {
+  from {
+    left: 0;
+    opacity: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    opacity: 0;
+    width: 50%;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    transform: translateX(0%);
+  }
+}
+.container .hamburger {
+  position: fixed;
+  top: 5px;
+  left: 4px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.5s 0.5s ease;
+}
+.container .hamburger .line {
+  height: 5px;
+  width: 0px;
+  margin: 5px;
+  border-radius: 20%;
+  background: #7c9c7a;
+}
+.container .hamburger .line--1 {
+  animation: hamLineAnim 0.3s forwards;
+}
+.container .hamburger .line--2 {
+  animation: hamLineAnim 0.3s 0.1s forwards;
+}
+.container .hamburger .line--3 {
+  animation: hamLineAnim 0.3s 0.2s forwards;
+}
+@keyframes hamLineAnim {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 31px;
+  }
+}
+.container .content--container {
+  height: max-content;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 700px;
+  margin: 0 auto;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+.container .content--container header {
+  text-align: center;
+  margin: 3em auto;
+}
+.container .content--container header h3 {
+  margin: 1em;
+  font-weight: 200;
+}
+.container .content--container article {
+  text-align: left;
+  padding: 0 1em;
+  letter-spacing: 1.08px;
+}
+.container .content--container article .sub--content {
+  font-size: 0.9em;
+  font-style: italic;
+  word-spacing: 2px;
+  line-height: 20px;
+  padding: 1em;
+  background: #fefefe;
+  border-radius: 0.8em;
+  margin: 1.5em;
+}
+.container .content--container article main {
+  word-spacing: 5px;
+  line-height: 24px;
+}
+.active {
+  overflow: hidden;
+}
+.active .content--container {
+  animation: pageAnimation 0.8s 0.5s forwards;
+}
+.active .hamburger {
+  animation: burgerAnimation 2s forwards;
+  transition: all 0.3s ease;
+}
+.active .hamburger .line {
+  background: #fefefe;
+  transition: background 0.2s ease;
+}
+.active .hamburger .line--1 {
+  width: 25px;
+  transform: rotate(40deg);
+  transform-origin: left;
+}
+.active .hamburger .line--2 {
+  transform: translateX(0.2em);
+  opacity: 0;
+}
+.active .hamburger .line--3 {
+  width: 25px;
+  transform: rotate(-40deg);
+  transform-origin: left;
+}
+.active .nav--container {
+  animation: navAnimation 0.8s 0.5s forwards;
+}
+.active .nav--container nav {
+  opacity: 1;
+}
+.active .nav--container nav .nav--links--container .nav--links:nth-child(1) {
+  animation: opacityMove 0.5s 1.3s forwards;
+}
+.active .nav--container nav .nav--links--container .nav--links:nth-child(2) {
+  animation: opacityMove 0.5s 1.4s forwards;
+}
+.active .nav--container nav .nav--links--container .nav--links:nth-child(3) {
+  animation: opacityMove 0.5s 1.5s forwards;
+}
+.active .nav--container nav .nav--links--container .nav--links:nth-child(4) {
+  animation: opacityMove 0.5s 1.6s forwards;
+}
+@keyframes navAnimation {
+  20% {
+    height: 30em;
+    width: 30em;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.1);
+    border-radius: 50%;
+  }
+  30% {
+    height: 50em;
+    width: 50em;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.3);
+    border-radius: 50%;
+  }
+  40% {
+    height: 80em;
+    width: 80em;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.2);
+    border-radius: 50%;
+  }
+  80% {
+    height: 80em;
+    width: 80em;
+    border-radius: 50%;
+    opacity: 1;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    border-radius: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes burgerAnimation {
+  from {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  40% {
+    transform: rotate(180deg);
+    transform-origin: 40%;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 1;
+  }
+  to {
+    transform: rotate(720deg);
+    transform-origin: 50%;
+    opacity: 1;
+  }
+}
+@keyframes pageAnimation {
+  20% {
+    transform: scale(1.09);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+@keyframes opacityMove {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.not-active .content--container {
+  animation: scaleOut 0.5s forwards;
+}
+@keyframes scaleOut {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.not-active .nav--container {
+  animation: navOut 0.6s forwards;
+}
+@keyframes navOut {
+  from {
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    border-radius: 0;
+    transform: translate(-50%, -50%);
+  }
+  30% {
+    height: 80em;
+    width: 80em;
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 50%;
+  }
+  50% {
+    border: 50%;
+    height: 80em;
+    width: 80em;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.3);
+    border-radius: 50%;
+  }
+  80% {
+    border: 50%;
+    height: 80em;
+    width: 80em;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.2);
+    border-radius: 50%;
+  }
+  to {
+    border: 50%;
+    height: 10em;
+    width: 10em;
+    top: 100%;
+    opacity: 1;
+    transform: translate(-50%, 0%) scale(0.1);
+    border-radius: 50%;
+  }
+}
+.not-active .hamburger .line--1 {
+  animation: hamburgerOut 0.3s forwards;
+}
+.not-active .hamburger .line--2 {
+  animation: hamburgerOut 0.3s 0.1s forwards;
+}
+.not-active .hamburger .line--3 {
+  animation: hamburgerOut 0.3s 0.2s forwards;
+}
+@keyframes hamburgerOut {
+  0% {
+    width: 0px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    width: 1px;
+  }
+  70% {
+    width: 10px;
+  }
+  to {
+    width: 31px;
+  }
+}
