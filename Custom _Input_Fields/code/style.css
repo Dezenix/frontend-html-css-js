@@ -11,7 +11,7 @@ body {
     height: 100%;
 }
 
-body {
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
