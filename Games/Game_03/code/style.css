@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.body-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: -webkit-linear-gradient(135deg, #fff6b7 10%, #f6416c 100%);
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.heading {
+    font-size: 70px;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+}
+.pick-msg {
+    font-size: 40px;
+    color: #fff6b7;
+    font-family: "Courier New", Courier, monospace;
+}
+.pick-x, .pick-o {
+    height: 180px;
+    width: 180px;
+    font-size: 9em;;
+    text-align: center;
+    line-height: 180px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-family: 'Luckiest Guy', cursive;
+}
+.pick-x:hover, .pick-o:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 15px 15px 40px -6px rgba(0, 0, 0, 0.2);
+}
+.pick-x {
+    margin-right: 20px;
+    color: #F85032;
+    text-shadow: 3px 8px 10px #da4a08;
+}
+.pick-o {
+    color: grey;
+    text-shadow: 3px 8px 5px #474747;
+}
+.game-container {
+    display: none;
+}
+.board {
+    width: 350px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    cursor: pointer;
+}
+.cell {
+    height: 110px;
+    font-size: 70px;
+    font-family: 'Luckiest Guy', cursive;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    line-height: 110px;
+}
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.8);
+    border-right: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 15px 15px 40px -6px rgba(0, 0, 0, 0.2);
+}
+.cell.x {
+    color: #F85032;
+    text-shadow: 3px 5px 5px #da4a08;
+    cursor: not-allowed;
+}
+.cell.o {
+    color: grey;
+    text-shadow: 3px 5px 5px #474747;
+    cursor: not-allowed;
+}
+.endgame {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); 
+    display: none;
+}
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: linen;
+    box-shadow: 6px 7px 42px 0px rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(82, 80, 80, 0.473);
+}
+.endgame .text{
+    color: maroon;
+    font-family: "Courier New", Courier, monospace;
+}
+.message button {
+    color: rgb(141, 41, 41);
+    margin-top: 30px;
+    padding: 10px 12px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.endgame button {
+    background: -webkit-linear-gradient(100deg, #fff6b7 10%, #f6416c 150%);
+    box-shadow: 1px 1px 5px 2px rgba(128, 128, 128, 0.596);
+    border: none;
+}
+.endgame button:active {
+    transform: scale(0.8);
+}
+@media screen and (max-width: 550px) {
+    .heading {
+        font-size: 50px;
+    }
+    .pick-msg {
+        font-size: 30px;
+    }
+    .pick-options {
+        flex-direction: column;
+    }
+    .pick-x, .pick-o {
+        height: 160px;
+        width: 160px;
+        font-size: 7em;
+        line-height: 160px;
+        margin-bottom: 20px;
+    }
+}
