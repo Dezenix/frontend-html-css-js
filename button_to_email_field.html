@@ -6,81 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background-color: rgb(130 231 255);
-        }
-        
-        #emailsub {
-           background-color: white;
-            color: rgb(30, 196, 238);
-            padding: 15px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            width: 100%;
-            transition: 1s;
-        }
-        
-        #input {
-             margin: 0px;
-            padding: 10px;
-            width: 100%;
-            outline: none;
-            height: 30px;
-            border-radius: 50px;
-            color: black;
-            border: none;
-            background-color: white;
-        }
-        
-        #send {
-            position: absolute;
-            border-radius: 18px;
-            right: -15px;
-            z-index: 2;
-            top: 5px;
-            border: none;
-            width: 32%;
-            padding: 12px;
-            border: none;
-            cursor: pointer;
-            color: white;
-            background-color: skyblue;
-            box-shadow: -6px 5px 11px white inset;
-            transform: translateX(2px);
-        }
-        #button {
-            position: absolute;
-            top: 5px;
-            border-radius: 5px;
-            z-index: 2;
-            border: none;
-            cursor: pointer;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="button_to_email_field.css">
 </head>
-
 <body>
     <div id="button">
         <button id="emailsub" onclick="sub()"><strong>Notify Me</strong></button></div>
+    <script src="button_to_email_field.js"></script>
 </body>
-<script>
-    function sub() {
-        var input = document.createElement("input");
-        var button = document.getElementById("emailsub");
-        input.setAttribute("type", "email");
-        input.setAttribute("id", "input");
-        input.setAttribute("placeholder", "Email");
-        var send = document.createElement("button");
-        send.setAttribute("id", "send");
-        send.innerHTML = "send";
-        //  document.getElementById("sub ").innerHTML = " ";
-        document.getElementById("button").replaceChild(input, button);
-        document.getElementById("button").appendChild(send);
-
-    }
-</script>
-
 </html>
