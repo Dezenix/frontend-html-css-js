@@ -1,22 +1,21 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'lato';
-    text-decoration: none;
+    box-sizing: border-box;  
 }
 .body{
     background-color: #fcdc29;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px
+    margin-top: 200px;
+    font-family: 'lato';   
 }
 .main{
     width: 250px;
     display: block;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden;   
 }
 .item{
     border-top: 1px solid #ef584a;
@@ -28,6 +27,7 @@
     padding: 15px 20px;
     background-color: #ff6f61;
     color: #fff; 
+    text-decoration: none;
 }
 .subitem{
     background: #273057;
@@ -41,6 +41,7 @@
     font-size: 14px;
     border-bottom: 1px solid #394c7f;
     position: relative;
+    text-decoration: none;
 }
 
 .subitem a:hover:before{
