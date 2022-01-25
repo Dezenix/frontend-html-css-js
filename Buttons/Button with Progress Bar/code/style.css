@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.body {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+:root {
+  --squish-animation-time: 500ms;
+  --progress-animation-time: 1000ms;
+  --circle-animation-time: 300ms;
+  --checkmark-animation-time: 300ms;
+  --btn-width: 125px;
+  --btn-height: 40px;
+}
+
+.btn {
+  position: relative;
+  background-color: #2b2d2f;
+  color: #71dfbe;
+  border: none;
+  border-radius: 0.125em;
+  width: var(--btn-width);
+  height: var(--btn-height);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn.animating {
+  background-color: transparent;
+  color: transparent;
+  user-select: none;
+  cursor: default;
+  animation: hide 0ms
+    calc(var(--squish-animation-time) + var(--progress-animation-time)) forwards;
+}
+
+.btn::before {
+  content: "";
+  display: none;
+  position: absolute;
+  background-color: #2b2d2f;
+  inset: 0;
+  border-radius: 0.125em;
+  animation: squish var(--squish-animation-time)
+    cubic-bezier(0.26, 0.6, 0.46, 1.7);
+  animation-fill-mode: forwards;
+}
+
+.btn::after {
+  content: "";
+  display: none;
+  position: absolute;
+  background-color: #aaa;
+  left: 51%;
+  right: 51%;
+  top: 45%;
+  bottom: 45%;
+  border-radius: 0.25em;
+  animation: progress var(--progress-animation-time)
+    var(--squish-animation-time);
+  animation-fill-mode: forwards;
+}
+
+.btn.animating::before,
+.btn.animating::after {
+  display: block;
+}
+
+.btn.animating + .checkmark-container {
+  background-color: #2b2d2f;
+  border-radius: 0.25em;
+  width: 0;
+  height: 0;
+  animation: circle var(--circle-animation-time)
+    calc(var(--squish-animation-time) + var(--progress-animation-time)) forwards
+    cubic-bezier(0.26, 0.6, 0.46, 1.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.animating + .checkmark-container .checkmark-svg {
+  stroke: white;
+  width: 25px;
+  stroke-dashoffset: 40.84104919433594;
+  stroke-dasharray: 40.84104919433594;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+  animation: checkmark var(--circle-animation-time)
+    calc(
+      var(--squish-animation-time) + var(--progress-animation-time) +
+        var(--circle-animation-time)
+    )
+    forwards;
+}
+
+@keyframes squish {
+  100% {
+    left: -25%;
+    right: -25%;
+    top: 45%;
+    bottom: 45%;
+    border-radius: 0.25em;
+  }
+}
+
+@keyframes progress {
+  100% {
+    left: -25%;
+    right: -25%;
+  }
+}
+
+@keyframes hide {
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    width: calc(var(--btn-width) * 1.5);
+    height: calc(var(--btn-height) * 0.1);
+  }
+  100% {
+    background-color: #71dfbe;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+}
+
+@keyframes checkmark {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
