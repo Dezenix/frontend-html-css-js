@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 20px auto;
   text-align: center;
@@ -20,7 +20,7 @@ input {
   padding: 5px 7px;
 }
 
-canvas {
+.canvas {
   background-color: white;
   border-radius: 20px;
   box-shadow: 3px 5px 6px black;

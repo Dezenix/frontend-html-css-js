@@ -7,18 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="body">
     Level:
-    <input type="number" id="gameSpeed" value="5" min="1" max="9" step="1" />
+    <input class="speed"type="number" id="gameSpeed" value="5" min="1" max="9" step="1" />
 
-    <input type="button" value="start" id="gameStart" onclick="initialize()" />
+    <input class="start-btn"type="button" value="start" id="gameStart" onclick="initialize()" />
     <span id="score"></span>
     <span id="maxScore"></span>
     <br />
     <br />
 
     <div>
-      <canvas id="gameArea"></canvas>
+      <canvas class ="canvas" id="gameArea"></canvas>
     </div>
 
     <script src="./script.js"></script>
