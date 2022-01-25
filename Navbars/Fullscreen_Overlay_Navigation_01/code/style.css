@@ -74,7 +74,7 @@ a{
    background: #a29bfe; 
 } 
 
-Lists .list:nth-child(5) a:before { 
+.Lists .list:nth-child(5) a:before { 
    background: #fd79a8; 
 }
 
