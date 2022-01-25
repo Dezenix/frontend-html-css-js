@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+.body{
+    background-color: #fcdc29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-family: 'lato';   
+}
+.main{
+    width: 250px;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;   
+}
+.item{
+    border-top: 1px solid #ef584a;
+    overflow: hidden;
+}
+.btn{
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+    background-color: #ff6f61;
+    color: #fff; 
+    text-decoration: none;
+}
+.subitem{
+    background: #273057;
+    transition: max-height  0.7s;
+    max-height: 0;
+}
+.subitem a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #394c7f;
+    position: relative;
+    text-decoration: none;
+}
+
+.subitem a:hover:before{
+    content: '';
+    opacity: 1;
+    transition: opacity 0.3s;
+    border-top: 24px solid transparent;
+    border-left: 11px solid #fcdc29;
+    border-bottom: 24px solid transparent;
+    position: absolute;
+    width: 6px;
+    height: 0;
+    left: 0;
+    top:0;
+}
+
+.subitem a:hover:after{
+    content: '';
+    opacity: 1;
+    transition: opacity 0.3s;
+    border-top: 24px solid transparent;
+    border-right: 11px solid #fcdc29;
+    border-bottom: 24px solid transparent;
+    position: absolute;
+    width: 6px;
+    height: 0;
+    right: 0;
+    top:0;
+}
+.subitem a:hover{
+    background: linear-gradient(to bottom, #273057 0%,#273057 50%,#394c7f 51%,#394c7f 100%);
+    transition: all 0.3s ease-in-out;
+    border-bottom: 0px solid #394c7f;
+}
+.item:target .subitem{
+    max-height: 150px;
+}
