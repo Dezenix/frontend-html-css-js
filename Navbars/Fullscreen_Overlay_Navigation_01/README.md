@@ -5,6 +5,4 @@
 
 ### Preview
 
-![fullscreen_navbar](./assets/1.jpg)
-
-![fullscreen_navbar](./assets/2.jpg)
+https://user-images.githubusercontent.com/77065920/150981403-66ddc06d-74e2-4d7e-acff-f156c8d3a649.mp4
