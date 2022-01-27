@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 
-input {
+.speed,.start-btn {
   font-size: 100%;
   text-align: center;
   padding: 5px 7px;
