@@ -1,7 +1,6 @@
 <h1 align="center">Frontend HTML CSS JS</h1>
 
-![frontend-html-css-js](https://user-images.githubusercontent.com/64855541/138309317-c1fd5b62-0944-4554-8d67-db6f0b418077.png)
-
+![15](https://user-images.githubusercontent.com/79747022/151583800-4e8a8cf8-cc7d-400e-b27c-228c60db6580.png)
 
 
 <div align="center">
@@ -55,4 +54,5 @@ Please note that Open Source Design has a [Contributor Code of Conduct](https://
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) © Dezenix
 
-![thankyou](https://user-images.githubusercontent.com/64855541/138309334-d499458a-5a91-4995-ae38-6f7228edc4dd.png)
+![t](https://user-images.githubusercontent.com/79747022/151583854-6d526317-5939-4577-96ed-532109757b2f.png)
+
