@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: #dedede;
+}
+.social-icons {
+    display:flex;
+}
+.social-icons li {
+    list-style: none;
+}
+.social-icons li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+.social-icons li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+.social-icons li a .icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: .5s;
+}
+.social-icons li:nth-child(1) a:hover .icon {
+    color: #3b5999;
+}
+.social-icons li:nth-child(2) a:hover .icon {
+    color: #00aced;
+}
+.social-icons li:nth-child(3) a:hover .icon {
+    color: #e4405f;
+}
+.social-icons li:nth-child(4) a:hover .icon {
+    color: #333333;
+}
+.social-icons li:nth-child(5) a:hover .icon {
+    color: #0077b5;
+}
