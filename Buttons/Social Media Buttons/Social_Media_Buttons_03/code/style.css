@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #0A122A;
+}
+.wrapper {
+    width: 400px;
+}
+.wrapper ul {
+    list-style: none;
+}
+.wrapper ul li {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease;
+}
+.wrapper ul li .icon {
+    color: #D8E2DC;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover.facebook {
+    border: 3px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover.twitter {
+    border: 3px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover.instagram {
+    border: 3px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover.google {
+    border: 3px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover.linkedin {
+    border: 3px solid #0077b5;
+    box-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-linkedin {
+    color: #0077b5;
+    text-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;
+}
