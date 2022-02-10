@@ -63,6 +63,14 @@
     background: #df5a8d;
     color: #fff;
 }
+.info_page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
 .info_box{
     height: 350px;
     width: 580px;
@@ -70,10 +78,7 @@
     box-shadow: 0 15px 35px rgba(255,255,255,0.05);
     border-radius: 20px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    display: none;
+    position: relative;
 }
 .info_box .info-title{
     width: 90%;
@@ -89,7 +94,7 @@
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left: 1px solid rgba(255,255,255,0.5);
     position: absolute;
-    top: -6%;
+    top: -3%;
 }
 .info_box .info-list{
     width: 96%;
@@ -107,11 +112,11 @@
     border-left: 1px solid rgba(255,255,255,0.5);
     position: absolute;
     left: -5%;
-    top: 16%;
+    top: 18%;
 }
 .info_box .buttons{
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     right: 5%;
     display: flex;
     align-items: center;
@@ -146,6 +151,14 @@
     color: #fff;
     background: #eb4283;
 }
+.quiz_page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
 .quiz_box{
     height: 450px;
     width: 550px;
@@ -154,8 +167,7 @@
     border-radius: 20px;
     padding: 20px 30px;
     transition: all 0.3s ease;
-    position: absolute;
-    display: none;
+    position: relative;
 }
 .quiz_box .header{
     width: 90%;
@@ -209,12 +221,11 @@
     border: 1px solid rgb(255,255,255);
     user-select: none;
 }
-.quiz_box .header .time_line{
+.time_line{
     height: 3px;
-    width: 300px;
-    position: absolute;
+    width: 95%;
     border-radius: 10px;
-    transform: translate(-25px, 35px);
+    transform: translate(0px, 34px);
     background: #eb4283;
 }
 .que-box {
@@ -262,8 +273,8 @@
 }
 .que-box .option_list .option:hover{
     font-weight: bold;
+    font-size: 20px;
     background: #fff;
-    transform: scale(1.05);
 }
 .que-box .option_list .option.correct{
     color: #155724;
@@ -332,6 +343,14 @@
     opacity: 1;
     pointer-events: auto;
 }
+.result_page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
 .result_box{
     background: rgba(255,255,255,0.5);
     box-shadow: 0 15px 35px rgba(255,255,255,0.05);
@@ -342,8 +361,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    position: absolute;
-    display: none;
 }
 .result_box .icon{
     font-size: 100px;
@@ -456,7 +473,7 @@
     .info_box {
         height: 350px;
         width: 380px;
-        padding: 5px 10px 5px 15px;
+        padding: 10px 10px 10px 15px;
         justify-content: space-around;
         position: initial;
     }
@@ -475,6 +492,7 @@
     }
     .info_box .info-list{
         width: 100%;
+        margin: 15px 0;
         margin-left: 12px;
         padding: 0px;
         font-size: 1em;
@@ -520,8 +538,8 @@
     .quiz_box .header .timer .timer_sec{
         width: 40px;
     }
-    .quiz_box .header .time_line{
-        transform: translate(-12px, 35px);
+    .time_line {
+        transform: translate(5px, 32px);
     }
     .que-box{
         padding: 20px 20px 10px 20px;
@@ -535,6 +553,12 @@
         margin-bottom: 12px;
         font-size: 16px;
         transform: translateX(-35px);
+    }
+    .que-box .option_list .option:hover {
+        font-size: 18px;
+    }
+    .que-box .option_list .option.incorrect, .option.correct {
+        font-size: 17px;
     }
     .que-box .option_list .option .icon{
         height: 23px;

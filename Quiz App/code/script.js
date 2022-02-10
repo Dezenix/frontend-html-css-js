@@ -63,13 +63,13 @@ const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
-const time_line = document.querySelector(".header .time_line");
+const time_line = document.querySelector(".time_line");
 const timeText = document.querySelector(".timer .time_text");
 const timeCount = document.querySelector(".timer .timer_sec");
 
 start_btn.onclick = () => {
     document.querySelector(".landing").style.display = "none";
-    document.querySelector(".info_box").style.display = "flex";
+    document.querySelector(".info_page").style.display = "flex";
 }
 
 exit_btn.onclick = () => {
@@ -77,8 +77,8 @@ exit_btn.onclick = () => {
 }
 
 continue_btn.onclick = () => {
-    document.querySelector(".info_box").style.display = "none";
-    document.querySelector(".quiz_box").style.display = "flex";
+    document.querySelector(".info_page").style.display = "none";
+    document.querySelector(".quiz_page").style.display = "flex";
     showQuetions(0);
     queCounter(1);
     startTimer(10);
@@ -97,8 +97,8 @@ const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
 restart_quiz.onclick = () => {
-    document.querySelector(".result_box").style.display = "none";
-    document.querySelector(".quiz_box").style.display = "flex";
+    document.querySelector(".result_page").style.display = "none";
+    document.querySelector(".quiz_page").style.display = "flex";
 
     timeValue = 10;
     que_count = 0;
@@ -191,8 +191,8 @@ function optionSelected(answer) {
 }
 
 function showResult() {
-    document.querySelector(".quiz_box").style.display = "none";
-    document.querySelector(".result_box").style.display = "flex";
+    document.querySelector(".quiz_page").style.display = "none";
+    document.querySelector(".result_page").style.display = "flex";
 
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 3) {
