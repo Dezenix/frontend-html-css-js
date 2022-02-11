@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    height: 40px;
+    width: 140px;
+}
+.dot {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 12px;
+    background: #000;
+    border-radius: 50%;
+    animation: dot 2.8s infinite;
+}
+.dots {
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: dots 2.8s infinite;
+}
+span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    background: #000;
+    border-radius: 50%;
+}
+@keyframes dot { 
+    50% { 
+        transform: translateX(96px);
+    }
+}
+@keyframes dots { 
+    50% { 
+        transform: translateX(-31px);
+    }
+}
