@@ -15,7 +15,7 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <div class="elements">
         <div class="leftElements">
           <div class="logo">
@@ -23,19 +23,31 @@
             <span class="name">Collab.</span>
           </div>
           <ul class="navLinks">
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Tours</li>
-            <li>Explor</li>
+            <li class="nav-link-items">Features</li>
+            <li class="nav-link-items">Pricing</li>
+            <li class="nav-link-items">Tours</li>
+            <li class="nav-link-items" id="dropDown">
+              Explor
+              <div class="dropDown-Menu">
+                <ul class="dropdown-Menu-list">
+                  <li class="dropdown-item"><a href="#">Action</a></li>
+                  <li class="dropdown-item"><a href="#">Another action</a></li>
+                  <li class="dropdown-item"><a href="#">Something else here</a></li>
+                  <li class="dropdown-item"><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </li>
+            <button class="btn hideMenu">X</button>
           </ul>
         </div>
         <div class="rightElements">
           <i class="search"></i>
           <button class="btn navBtn">Get Started</button>
+          <button class="btn menuBtn">menu</button>
         </div>
       </div>
     </nav>
-    <main>
+    <main class="main">
         <div class="curve-Main"></div>
         <div class="circle circle1"></div>
         <div class="circle circle2"></div>
@@ -61,8 +73,9 @@
         </div>
       </div>
       <div class="illustration">
-        <img src="./251.svg" alt="illustration" class="illusImage"/>
+        <img src="../assets/251.svg" alt="illustration" class="illusImage"/>
       </div>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>

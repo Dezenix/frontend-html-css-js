@@ -16,7 +16,7 @@ body{
     font-family: 'Manrope', sans-serif;
     overflow: hidden;
 }
-nav{
+.navbar{
     width: 100vw;
     padding: 1.6rem 0;
     position: fixed;
@@ -49,17 +49,18 @@ nav{
     align-items: center;
     margin-left: var(--margin-navEle);
 }
-.leftElements ul{
+.navLinks{
     text-decoration: none;
     margin-left: 3rem;
 }
-.leftElements ul li{
+.leftElements .navLinks .nav-link-items{
     display: inline;
     margin-right: 1.8rem;
     padding: 0.8rem;
     color: var(--clr-text) ;
+    cursor: pointer;
 }
-.leftElements ul li:hover{
+.leftElements .navLinks .nav-link-items:hover{
     border-bottom: 4px solid var(--clr-bg-main);
     color: black;
 }
@@ -84,7 +85,46 @@ nav{
     background-color: var(--clr-bg-btn-deep);
 
 }
-main{
+.menuBtn{
+    display: none;
+}
+#dropDown{
+    position: relative;
+}
+.dropDown-Menu{
+    padding: 10px;
+    width: 245px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 8px;
+    background-color: #5b56e9f3;
+    display: none;
+}
+.show{
+    display: block;
+}
+.dropDown-Menu .dropdown-Menu-list{
+    text-decoration: none;
+}
+.dropDown-Menu .dropdown-Menu-list .dropdown-item{
+    list-style: none;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 5px 5px;
+    border-radius: 8px;
+}
+.dropdown-item:hover {
+    background-color:#0701bd ;
+}
+.dropDown-Menu .dropdown-Menu-list .dropdown-item a{
+    text-decoration: none;
+    color: #ffff;
+}
+.hideMenu{
+    display: none;
+}
+.main{
     width: 100%;
     height: 100vh;
     display: grid;
@@ -169,57 +209,48 @@ main{
     bottom: -7%;
     left: 30%;
 }
-/* @media (max-width:1300px){
-    body{
-        font-size: 0.8rem;
-    }
-    main{
-        column-gap: 10px;
-        position: relative;
-    }
-    .illusImage{
-        width: 60vw;
-    }
-    .illustration{
-        justify-self:right ;
-    }
-    .heading{
-        font-size: 3.4rem;
-    }
-    .curve-Main {
-    height: 120%;
-    width: 100%;
-    top: -4rem;
-    right: -32rem;
-    }
-    nav{
-        padding: 0.5rem 0;
-    }
-    .btn{
-        padding: 13px 15px;
-    }
-    .leftElements ul {
-        margin-left: 2rem;
-    }
-    .main-Content{
-        padding-left:20px ;
-    }
-} */
 @media (max-width:425px){
     :root{
         --margin-navEle : 1.6rem;
     }
-    .leftElements ul,.navBtn,.circle5{
+    .navBtn,.circle5{
         display: none;
     }
-    main{
-        /* grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr; */
+    .main{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
+    }
+    .navLinks{
+        padding-left: 0rem;
+        background-color: #fdc302;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -120%;
+        right: -149px;
+        border-radius: 50%;
+        height: 25rem;
+        width: 25rem;
+        display: none;
+    }
+    .dropdown-item{
+        padding-right: 6rem;
+    }
+    .hideMenu{
+        display: block;
+        position: absolute;
+        top: 28%;
+        left: 25%;
+        background-color: transparent;
+    }
+    #dropDown{
+        display: none;
     }
     .curve-Main{
     height: 65vh;
@@ -239,7 +270,11 @@ main{
     .btn{
         padding: 12px 18px;
     }
-    nav{
+    .menuBtn{
+        display: block;
+        background-color: #fdc302;
+    }
+    .navbar{
         padding: 1rem 0;
     }
     .leftElements .logo .name{
