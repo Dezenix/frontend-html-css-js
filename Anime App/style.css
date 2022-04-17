@@ -54,6 +54,7 @@ body {
   cursor: pointer;
   font-size: 17px;
   letter-spacing: 0.6px;
+  margin-bottom: 10px;
 }
 
 .btn:hover {
