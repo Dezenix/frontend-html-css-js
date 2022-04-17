@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   background: linear-gradient(to right, #00afff, #00ff6c);
