@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans',sans-serif;
 }
-body{
+#main-tag{
     background: linear-gradient(to right, #fefffe, rgb(185, 182, 182));
 }
 .center {
