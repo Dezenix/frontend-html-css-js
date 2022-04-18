@@ -1,7 +1,3 @@
-# Anime App
-
-A simple anime app created with HTML CSS and JavaScript and with third party api catboys.Api it is really meant for beginners who don't have the knowledge of working with web apis in javaScript
-
 ## Tech Stacks Used
 
 <h3> Tech Stack Used <img src = "https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width = 32px> </h3>
