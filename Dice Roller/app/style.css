@@ -1,0 +1,22 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 32px;
+	background: #555;
+	user-select: none;
+	overflow: hidden;
+	cursor: pointer;
+	transition: 1s background;
+}
+
+img {
+	width: 256px;
+	height: 256px;
+}
+
+@keyframes roll {
+	25% { transform: rotate(95deg) }
+	50% { transform: rotate(180deg) }
+	75% { transform: rotate(-95deg) }
+}
