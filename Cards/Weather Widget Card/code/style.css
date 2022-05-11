@@ -4,9 +4,10 @@
     outline: none;
 }
 .body{
-    font-family: 'Roboto', sans-serif;
+     font-family: 'Roboto', sans-serif;
     overflow: hidden;
-    background: #d22222;
+    background: url('https://img.wallpapic.com/i0089-731-515/medium/colorful-art-digital-light-wallpaper.jpg');
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,30 +16,47 @@
     width: 60px;
 }
 .container{
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fcfdfd;
+    background-color: #000000;
+   
     width: 355px;
     height: 125px;
     margin: 150px auto;
     border-radius: 9px;
     padding: 25px;
-    box-shadow: 0px 31px 35px -26px #080c21;
+    box-shadow: 0px 31px 35px -26px #000000;
 }
 .date{
-    font-size: 14px;
-   font-weight: bold;
-   color: rgba(0,0,0,0.5);
+    font-size: 12px;
+   color:#fff;
+   font-family: 'Bree Serif', serif;
+   font-family: 'Patua One', cursive;
 }
 .city{
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 5px;
-    color: rgba(0,0,0,0.7);
+    font-family: 'Bree Serif', serif;
+    font-family: 'Patua One', cursive;
+    padding-top: 5px;
+  
+        color: #fff;
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px #0fa,
+          0 0 82px #0fa,
+          0 0 92px #0fa,
+          0 0 102px #0fa,
+          0 0 151px #0fa;
+      
+    
 }
 .cloud{
-    font-size: 71px;
-    color: rgba(0,0,0,0.9);
+    font-size: 55px;
+    color: rgba(255, 249, 249, 0.9);
 }

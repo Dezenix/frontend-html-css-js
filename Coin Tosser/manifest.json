@@ -1,0 +1,18 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "Coin Toss",
+  "description": "Having trouble making a decision? Need to leave something up to chance? What better way to decide than to flip a coin?",
+  "short_name": "Flip a Coin",
+  "version": "1.1.12",
+  "author": "Extensions by Olivia",
+  "browser_action": {
+    "default_icon": "tab-icon.png",
+    "default_title": "Coin Toss",
+    "default_popup": "newCoin.html"
+  },
+  "icons": {
+    "128":"tab-icon.png"
+  }
+}
