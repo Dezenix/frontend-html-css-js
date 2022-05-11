@@ -6,4 +6,4 @@
 ### Preview
 
 <h3>Preview</h3>
-<img src="/Feedback-Popups/Feedback-UI/feedback.png.png" alt="Demo">
+<img src="/Feedback-Popups/Feedback-UI/feedback.png" alt="Demo">
