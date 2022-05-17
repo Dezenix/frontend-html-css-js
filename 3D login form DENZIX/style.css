@@ -1,0 +1,135 @@
+
+body {
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+
+    background: linear-gradient(300deg, #000000, #342d2d);
+    background-size: 120% 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+    animation: gradient-animation 12s ease infinite;
+}
+
+button {
+    transition: 0.5s;
+    color: white;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: #000000;
+    cursor: pointer;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    font-weight: 900;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    height: 500px;
+    box-shadow: 4px 4px 10px #cbced1, -4px -4px 10px white;
+    background: #eaedf0;
+}
+
+label,
+input,
+button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    background: url("https://image.similarpng.com/thumbnail/2020/07/Github-icon-logo-on-transparent-PNG.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
+.iconName {
+    margin-top: 12px;
+    font-size: 1.8rem;
+    color: #000000;
+    letter-spacing: 2px;
+}
+
+.forms {
+    margin-top: 30px;
+    text-align: left;
+}
+
+
+
+
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+
+
+button:hover {
+    box-shadow: none;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+
+a {
+    position: absolute;
+    font-size: 8px;
+    bottom: 0px;
+    right: 0px;
+    text-decoration: none;
+    color: black;
+    background: #ecf0f3;
+    padding: 4px;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
