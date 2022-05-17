@@ -40,6 +40,11 @@ body {
   left: 20px;
   margin: 0;
   opacity: 0;
+  background-color: #111;
+  padding: 10px 10px;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .panel.active {
