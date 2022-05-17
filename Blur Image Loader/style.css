@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+display: flex;
+/* flex-direction: column; */
+align-items: center;
+justify-content: center;
+height: 100vh;
+overflow: hidden;
+margin: 0;
+}
+
+.image{
+    background:url('1626442057935.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.percentage{
+    font-size: 50px;
+    color: aliceblue;
+}
