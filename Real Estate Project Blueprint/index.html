@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="4.jpg" usemap="#image-map" class="map">
+
+<map name="image-map">
+    <area target="_self" alt="BLOCK - A" title="BLOCK - A" href="singleBuild.html" coords="209,593,308,590,340,604,365,605,420,619,596,692,588,787,235,727,179,710" shape="poly">
+    <area target="_self" alt="BLOCK - B" title="BLOCK - B" href="singleBuild.html" coords="635,455,728,452,742,464,788,464,800,479,842,479,886,603,883,669,847,669,806,662,764,667,725,650,625,560" shape="poly">
+    <area target="_self" alt="BLOCK - C" title="BLOCK - C" href="singleBuild.html" coords="1051,451,1142,447,1157,463,1202,459,1218,476,1257,469,1278,578,1176,666,1108,661,1066,661,1054,649,1025,651,1018,576" shape="poly">
+    <area target="_self" alt="BLOCK - D" title="BLOCK - D" href="singleBuild.html" coords="1319,588,1478,474,1573,471,1578,486,1636,481,1649,496,1692,493,1726,600,1476,683,1419,678,1371,678,1327,664" shape="poly">
+</map>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    !function () { "use strict"; function r() { function e() { var r = { width: u.width / u.naturalWidth, height: u.height / u.naturalHeight }, a = { width: parseInt(window.getComputedStyle(u, null).getPropertyValue("padding-left"), 10), height: parseInt(window.getComputedStyle(u, null).getPropertyValue("padding-top"), 10) }; i.forEach(function (e, t) { var n = 0; o[t].coords = e.split(",").map(function (e) { var t = 1 == (n = 1 - n) ? "width" : "height"; return a[t] + Math.floor(Number(e) * r[t]) }).join(",") }) } function t(e) { return e.coords.replace(/ *, */g, ",").replace(/ +/g, ",") } function n() { clearTimeout(d), d = setTimeout(e, 250) } function r(e) { return document.querySelector('img[usemap="' + e + '"]') } var a = this, o = null, i = null, u = null, d = null; "function" != typeof a._resize ? (o = a.getElementsByTagName("area"), i = Array.prototype.map.call(o, t), u = r("#" + a.name) || r(a.name), a._resize = e, u.addEventListener("load", e, !1), window.addEventListener("focus", e, !1), window.addEventListener("resize", n, !1), window.addEventListener("readystatechange", e, !1), document.addEventListener("fullscreenchange", e, !1), u.width === u.naturalWidth && u.height === u.naturalHeight || e()) : a._resize() } function e() { function t(e) { e && (!function (e) { if (!e.tagName) throw new TypeError("Object is not a valid DOM element"); if ("MAP" !== e.tagName.toUpperCase()) throw new TypeError("Expected <MAP> tag, found <" + e.tagName + ">.") }(e), r.call(e), n.push(e)) } var n; return function (e) { switch (n = [], typeof e) { case "undefined": case "string": Array.prototype.forEach.call(document.querySelectorAll(e || "map"), t); break; case "object": t(e); break; default: throw new TypeError("Unexpected data type (" + typeof e + ").") }return n } } "function" == typeof define && define.amd ? define([], e) : "object" == typeof module && "object" == typeof module.exports ? module.exports = e() : window.imageMapResize = e(), "jQuery" in window && (window.jQuery.fn.imageMapResize = function () { return this.filter("map").each(r).end() }) }();
+    $('map').imageMapResize(); 
+</script>
+
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.map').maphilight();
+    });
+    $.fn.maphilight.defaults = {
+	fill: true,
+	fillColor: 'CC5500',
+	fillOpacity: 0.7,
+	stroke: true,
+	strokeColor: 'FFFF00',
+	strokeOpacity: 1,
+	strokeWidth: 2,
+	fade: true,
+	alwaysOn: false,
+	neverOn: false,
+	groupBy: false,
+	wrapClass: true,
+	shadow: true,
+	shadowX: 0,
+	shadowY: 0,
+	shadowRadius: 6,
+	shadowColor: '000000',
+	shadowOpacity: 0.8,
+	shadowPosition: 'outside',
+	shadowFrom: false
+}
+</script>
+
+</body>
+</html>
