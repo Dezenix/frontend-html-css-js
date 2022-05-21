@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #151515;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    padding: 5px;
+    color: #fff;
+}
+
+/* ======================== */
+
+.scene {
+    width: 230px;
+    height: 200px;
+    background: url('./background.jpg') center no-repeat;
+    background-size: cover;
+    border: 5px solid #191919;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.scene img {
+    position: absolute;
+}
+
+.stars {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: stars-rotate 100s linear forwards;
+}
+
+.astronaut {
+    top: 40px;
+    right: 10px;
+    width: 40px;
+    animation: astronaut-move 20s forwards;
+}
+
+.ship {
+    top: 60px;
+    left: 120px;
+    width: 50px;
+    transform: scale(0);
+    animation: ship-move 15s 3s forwards;
+}
+
+.comet {
+    top: 150px;
+    left: -250px;
+    width: 150px;
+    animation: comet-move 20s 5s forwards;
+}
+
+.moon {
+    bottom: -50px;
+    right: -50px;
+    width: 150px;
+}
+
+@keyframes astronaut-move {
+    to {
+        transform:
+            translate(-300px, -150px) rotate(-360deg);
+    }
+}
+
+@keyframes ship-move {
+    25% {
+        transform: scale(.5) translate(-170px, -25px);
+    }
+
+    50%,
+    100% {
+        transform: scale(4) translate(250px, 300px);
+    }
+}
+
+@keyframes stars-rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes comet-move {
+    to {
+        transform:
+            translate(500px, -150px);
+        filter: hue-rotate(360deg);
+    }
+}
