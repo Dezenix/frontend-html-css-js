@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    background: #121316;
+  }
+  .box {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #skull,
+  #bomb,
+  #virus,
+  #bike {
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 0 60px;
+    font-size: 10rem;
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 4px 4px 4px #00000080, 10px 1px 17px #00000080,
+      4px 4px 10px #00000080, 4px 4px 3px #00000080, inset 4px 4px 10px #00000080,
+      inset 4px 4px 10px #00000080, inset 4px 4px 10px #00000080,
+      inset 4px 4px 10px #00000080;
+    text-shadow: 0 0 50px #0a78ff, 0 0 100px #0073ff, 0 0 150px #0073ff,
+    0 0 200px #0073ff;
+    animation: blink 2s linear infinite;
+  }
+  #bomb {
+    animation-delay: 0.4s;
+  }
+  #virus {
+    animation-delay: 0.6s;
+  }
+  #bike {
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes blink {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
