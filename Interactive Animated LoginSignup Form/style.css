@@ -1,0 +1,220 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #267871;
+}
+
+.container {
+    position: absolute;
+    left: calc(50% - 160px);
+    width: auto;
+    height: auto;
+    top: calc(50% - 240px);
+}
+
+form {
+    position: absolute;
+    text-align: center;
+    background: #136a8a;
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);
+    background: linear-gradient(to right, #267871, #136a8a);
+
+    width: 400px;
+    height: 500px;
+    border-radius: 100px;
+    padding: 30px 20px 0 20px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: 'Dosis';
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #b5aea8;
+    margin-bottom: 30px;
+}
+
+input,
+button {
+    outline: none !important;
+
+}
+
+button.form-btn {
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    bottom: 0;
+    border: 0;
+    font-family: 'Dosis';
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button.form-btn.si {
+    right: 0;
+    border-radius: 0 0 5px 0;
+    background-color: #ff7d00;
+    color: #fff;
+    border-bottom-left-radius: 100px;
+
+}
+
+button.form-btn.lg {
+    left: 0;
+    background-color: rgba(102, 96, 90, 0.35);
+    color: rgb(147, 135, 70);
+    /* border-radius: 100px; */
+    transition: all 0.3s linear;
+    border-bottom-left-radius: 100px;
+}
+
+button.form-btn.lg:hover {
+    background-color: rgba(255, 125, 0, 0.65);
+    color: rgb(215, 197, 89);
+}
+
+button.form-btn.lg.back {
+    background-color: rgba(0, 0, 0, 0.15);
+    transition: all 0.3s linear;
+}
+
+button.form-btn.lg.back:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+
+input {
+    margin-bottom: 25px;
+    width: 85%;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    border-bottom: 5px solid #e67300;
+    color: #ee8a20;
+}
+
+::-webkit-input-placeholder {
+    color: #000000;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+
+.logIn input,
+.signUp .ema {
+    width: 100%;
+}
+
+.logIn {
+    z-index: 1;
+    transform: perspective(100px) translate3d(100px, 0px, -40px);
+    opacity: 0.5;
+}
+
+.signUp {
+    z-index: 2;
+}
+
+.activeClass1 {
+    animation-name: mainView;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.activeClass2 {
+    animation-name: main;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.activeClass3 {
+    animation-name: backView;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.activeClass4 {
+    animation-name: back;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes backView {
+    0% {
+        z-index: 2;
+        transform: perspective(100px) translate3d(0px, 0px, 0px);
+        opacity: 1;
+        box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    100% {
+        z-index: 1;
+        transform: perspective(100px) translate3d(100px, 0px, -30px);
+        opacity: 0.5;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+@keyframes back {
+    0% {
+        z-index: 2;
+        transform: perspective(100px) translate3d(0px, 0px, 0px);
+        opacity: 1;
+        box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    100% {
+        z-index: 1;
+        transform: perspective(100px) translate3d(-100px, 0px, -30px);
+        opacity: 0.5;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+@keyframes mainView {
+    0% {
+        z-index: 1;
+        transform: perspective(100px) translate3d(100px, 0px, -40px);
+        opacity: 0.5;
+    }
+
+    50% {
+        z-index: 2;
+        transform: perspective(100px) translate3d(450px, 0px, -40px);
+    }
+
+    100% {
+        z-index: 2;
+        transform: perspective(100px) translate3d(0px, 0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes main {
+    0% {
+        z-index: 1;
+        transform: perspective(100px) translate3d(-100px, 0px, -40px);
+        opacity: 0.5;
+    }
+
+    50% {
+        z-index: 2;
+        transform: perspective(100px) translate3d(-450px, 0px, -40px);
+    }
+
+    100% {
+        z-index: 2;
+        transform: perspective(100px) translate3d(0px, 0px, 0px);
+        opacity: 1;
+    }
+}
