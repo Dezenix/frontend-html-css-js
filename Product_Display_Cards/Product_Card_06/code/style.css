@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease-out 0.5s;
+}
+body{
+    height: 90vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+.card{
+    width: 200px;
+    height: 280px;
+    background-color: #fff;
+    margin: 0px 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#product-img{
+    width: 130px;
+    height: 130px;
+}
+p{
+    margin: 2px auto;
+    
+}
+.brand{
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #333;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #40bf80;
+    color: #fff;
+    
+}
+button:active{
+    transform: scale(0.9);
+}
+.select{
+    height: 100px;
+    border-radius: 5px;  
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.option{
+    width: 50px;
+    height: 50px;
+    margin:0px 10px;
+}
+.option:hover{
+    border:2px solid lightblue;
+}
+.opt-img{
+    width: 46px;
+    height: 46px;
+}
+.name{
+    font-size: 12px;
+    color: #555;
+}
+.mrp{
+    font-weight: bold;
+    font-size: 16px;
+}
