@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #EECDA3; 
+  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  
+  background: linear-gradient(to right, #EF629F, #EECDA3);
+}
+
+.card {
+  width: 500px;
+  height: 600px;
+  perspective: 1000px;
+  border-radius: 60px;
+}
+
+#form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  transition: transform 2s;
+
+}
+
+
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 40px;
+  line-height: 70px;
+}
+
+.front {
+  background-color: rgb(13, 36, 121);
+}
+
+.back {
+  background-color: rgb(13, 36, 121);
+  transform: rotateY(180deg);
+  font-family: 'Cinzel', serif;
+  line-height: 70px;
+ 
+}
+input{
+  padding: 20px 40px;
+  margin-top: 30px;
+  border-radius: 30px;
+  background-color:#03e9f4;
+  color: white;
+  font-size: 20px;
+  border: none;
+}
+
+input::placeholder{
+  color: #574fad;
+}
+
+input:hover{
+    background: #03e9f4;
+    border: 3px solid pink;
+    color: #fff;
+    transition: .5s;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+
+
+.subButt{
+  background: #03e9f4;
+  color: #fff;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  transition: .5s;
+  border-radius: 30px;
+  margin-top: 50px;
+  border: 3px solid pink;
+
+}
+.subButt:hover{
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  border: 3px solid pink;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+span{
+  color: white;
+  font-size: 20px;
+}
+a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: line-through;
+  background-color: pink;
+  box-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4,
+  0 0 50px #03e9f4,
+  0 0 100px #03e9f4;
+}
