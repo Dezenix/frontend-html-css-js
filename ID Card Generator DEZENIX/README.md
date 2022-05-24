@@ -1,5 +1,6 @@
 
-#  
+#  Id card Generator
+This Takes your info from the form that you have to fill and create a brand new digital card 
 
 ## 🚀 About Me
 I'm a full stack developer...you can follow me here -https://github.com/RAHULBAWA777
@@ -17,4 +18,4 @@ Start the live server
 
 This project is used by the following companies:
 
-- https://github.com/
+- https://github.com/Dezenix/frontend-html-css-js
