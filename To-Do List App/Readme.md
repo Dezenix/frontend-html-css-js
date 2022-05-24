@@ -7,4 +7,5 @@
 
 <h2>Preview:</h2>
 
-![ToDoList](https://user-images.githubusercontent.com/72568715/169979642-cb0d6545-fea1-4f11-8efa-be44de3534dc.PNG)
+![ToDoList](https://user-images.githubusercontent.com/72568715/169985999-db5ef970-42de-4234-9511-d883d58232c3.PNG)
+
