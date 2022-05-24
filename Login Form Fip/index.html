@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Flip Fill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div id="form">
+            <div class="front">
+
+                <input type="text" placeholder="Enter Name">
+                <br>
+                <input type="text" placeholder="Enter Email">
+                <br>
+                <input type="text" placeholder="Create Username">
+                <br>
+                <input type="text" placeholder="Create Password ">
+                <br>
+                <button class="subButt">Submit</button>
+                <br>
+                <hr style="width:9rem ;">
+
+                <span>Already A User?</span><a href="#" onclick="Flip()">Login</a>
+
+            </div>
+                <div class="back">
+                    <input type="text" placeholder="Create Username">
+                    <br>
+                    <input type="text" placeholder="Create Password ">
+                    <br>
+                    <button class="subButt" >Login</button>
+                    <br>
+                    <hr style="width:9rem; ">
+                    <span>New User?</span><a href="#" onclick="FlipBack()">Register</a>
+
+                    <p style="color:pink; font: size 20px;">Made With  ❤ by <a href="https://github.com/RAHULBAWA777">RAHULBAWA</a> </p>
+                </div>
+           
+        </div>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
