@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 40px;
+  border: 5px solid #fff;
+}
+
+#survey-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.form-group p {
+  font-size: 20px;
+  font-weight: bold;
+  background: transparent;
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 15px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.form-group span {
+  font-style: italic;
+  text-decoration: underline;
+  padding: 2px;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
