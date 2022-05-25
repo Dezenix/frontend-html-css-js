@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.box{
+    position: relative;
+    width: 90px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    cursor: pointer;
+    margin: 1em;
+    transition: all .4s;
+}
+.box:hover{
+    width: 160px;
+    background: rgb(40, 37, 50);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 100px #f969da7c;
+}
+.box:nth-child(2):hover{
+    background: #1a6dda;
+    box-shadow: 0 0 100px #5a8fd5;
+}
+.box:nth-child(3):hover{
+    width: 130px;
+    background: #16a0f7;
+    box-shadow: 0 0 100px #1e8dd280;
+}
+.box:nth-child(4):hover{
+    background: purple;
+    box-shadow: 0 0 100px #c526e57e;
+}
+p{
+    transform: translate(60px);
+}
+
+.github{
+    background: rgb(42, 35, 57);
+}
+.facebook{
+    background: #5a8fd5;
+}
+.twitter{
+    background: #3daef4;
+}
+.twitch{
+    background: purple;
+}
+.box:hover .socials{
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
+    color: rgb(0, 0, 0);
+}
+.box .socials{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: all .4s;
+}
