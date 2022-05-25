@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Stone Paper Scissors Game</h1>
+    <div class="container">
+        <div class="scoreTop">
+            <div class="result">
+                <h3>Human :</h3><span id="myScore">0</span>
+            </div>
+            <div class="display">
+                <i class="fas fa-hand-rock"></i>
+            </div>
+        </div>
+
+        <div class="scoreTop">
+            <div class="result">
+                <h3>A.I :</h3><span id="computerScore">0</span>
+            </div>
+            <div class="display hand">
+                <i class="fas fa-hand-scissors"></i>
+            </div>
+        </div>
+    </div>
+    <h2 id="inst">Pick Your Move</h2>
+    <div class="choice">
+        <button class="fas fa-hand-rock" id="rock"></button>
+        <button class="fas fa-hand-paper" id="paper"></button>
+        <button class="fas fa-hand-scissors" id="scissors"></button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/fa1e66a5e4.js" crossorigin="anonymous"></script></body>
+</html>
