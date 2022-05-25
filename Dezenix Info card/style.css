@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 45px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(300deg, #000000, #7a7a7a, #090606);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    background: linear-gradient(to right, rgb(25, 195, 79) 20%, rgb(93, 216, 230) 40%, rgb(248, 137, 225) 60%, rgb(248, 58, 29) 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.container {
+    cursor: pointer;
+    width: 650px;
+    height: 700px;
+    position: relative;
+}
+
+.container .box {
+    width: 100%;
+    color: white;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.089);
+    backdrop-filter: blur(38px);
+    border: 4px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.073);
+    transition: all .6s;
+}
+
+.container .box p {
+    padding: 1em 1.5em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container:hover .box {
+    color: rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.container::before,
+.container::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    transition: all .6s;
+    background: #000000;
+}
+
+.container::before {
+    top: 0;
+    right: 0;
+}
+
+.container::after {
+    bottom: 0;
+    left: 0;
+    background: #444344;
+}
+
+.container:hover::before {
+    width: 100px;
+    height: 100px;
+    transform: translate(20px, -20px);
+    border-radius: 50%;
+}
+
+.container:hover::after {
+    width: 200px;
+    height: 200px;
+    transform: translate(-20px, 20px);
+    border-radius: 50%;
+}
