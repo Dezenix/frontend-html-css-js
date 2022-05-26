@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(255, 255, 255);
+    animation: trance 10s infinite 1.5s;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.moon{
+    height: 250px;
+    width: 259px;
+    border-radius: 50%;
+    background-color: gold;
+    border: 3px solid gold;
+}
+
+.rays{
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    background-color: white;
+    top: -5px;
+    left: 0px;
+    animation: shadows 10s infinite 1.5s;
+}
+
+@keyframes trance{
+    0%{
+     
+        background-color: white;
+    }
+    50%{
+        
+        background-color: black;
+    }
+    100%{
+        
+        background-color: white;
+    }
+}
+@keyframes shadows{
+    0%{
+        transform: translateX(250px);
+        background-color: white;
+    }
+    50%{
+        transform: translateX(-20px);
+        background-color: black;
+    }
+    100%{
+        transform: translateX(-270px);
+        background-color: white;
+    }
+}
