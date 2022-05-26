@@ -200,3 +200,103 @@ button {
 }
 
 /* Footer  */
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 20px;
+}
+
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .circle {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+}
+
+footer p {
+  text-align: right;
+}
+
+/* media quries  */
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 20px;
+  }
+
+  .light-blueish::before {
+    background-image: url("./images/bg-curve-mobile.svg");
+    height: 80px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex > div {
+    width: 100%;
+  }
+
+  .flex > div:first-child {
+    margin-right: 0;
+  }
+
+  .flex > div:last-child {
+    margin-left: 0;
+  }
+
+  .testimonal-box {
+    width: 100%;
+  }
+
+  .blueish form input {
+    flex: 1;
+  }
+
+  .blueish form button {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .illustration {
+    margin-top: 30px;
+  }
+
+  .user-info {
+    justify-content: center;
+  }
+
+  footer ul {
+    padding: 0;
+    width: 100%;
+  }
+}
