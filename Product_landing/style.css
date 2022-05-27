@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap");
+
+/* for the smooth scroll  */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body  */
+body {
+  font-family: "Open Sans", sans-serif;
+  /* background-color: #fff; */
+  color: #333;
+}
+
+/* nav bar and header section  */
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  width: 100%;
+  background-color: lightblue;
+}
+
+#header img {
+  width: 400px;
+  text-align: left;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-bar ul li {
+  list-style: none;
+  padding: 10px 10px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: #000;
+  padding: 20px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+/* Form section starts  */
+#form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#form h2 {
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0.9;
+  padding: 20px 10px;
+}
+
+#form input {
+  width: 400px;
+  margin: 5px;
+  text-align: center;
+  padding: 10px 5px;
+  border: 2px solid salmon;
+}
+
+#submit {
+  background-color: salmon;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+/* Form section ends  */
+
+/* feature section  */
+
+#features {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+#features .text,
+#features .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 2;
+  padding: 15px;
+}
+
+/* feature icon color  */
+#features .icon {
+  color: salmon;
+  font-size: 30px;
+}
+/* feaute section ends  */
+
+#How-it-works {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* pricing  */
+#pricing {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+/* product  */
+.product {
+  display: flex;
+  border-radius: 10px;
+  background-color: lightblue;
+  flex-direction: column;
+  border: 1px solid #000;
+  padding: 20px 30px;
+  margin: 10px 10px;
+}
+
+.product .level {
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: black;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.product h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product ol {
+  list-style: none;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product li {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.product .btn {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  font-weight: bold;
+  background-color: salmon;
+  padding: 20px 30px;
+}
+
+.btn:active {
+  outline: none;
+}
+
+/* footer  */
+footer {
+  background-color: #ddd;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li {
+  list-style: none;
+  padding: 20px;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  color: #aaa;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  #pricing {
+    flex-direction: column;
+  }
+
+  #header img {
+    display: none;
+  }
+
+  footer ul {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer span {
+    display: flex;
+    justify-content: center;
+  }
+}
