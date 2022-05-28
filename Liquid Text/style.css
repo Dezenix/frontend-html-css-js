@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    background: BLACK;
+    height: 74vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+}
+
+.container h1{
+    letter-spacing: 10px;
+    color: aliceblue;
+    font-size: 10rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.container h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 3px rgb(0, 255, 157);
+}
+.container h1:nth-child(2){
+    color: rgb(183, 255, 0);
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        clip-path: polygon(
+            0% 35%,
+            14% 48%,
+            35% 60%,
+            54% 66%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+    50%{
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 33%,
+            100% 100%,
+            0% 100%
+        )
+    }
+}
