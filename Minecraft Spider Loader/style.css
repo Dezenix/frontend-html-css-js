@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+.crust {
+ margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crust .core {
+  width: calc(170px / 7);
+  height: calc(70px / 7);
+  background-color: #acff1d;
+  color: #acff1d;
+  box-shadow: 20px 20px 0 0, -20px -20px 0 0, 20px -20px 0 0, -20px 20px 0 0,
+    0 20px 0 0, 20px 0 0 0, -20px 0 0 0, 0 -20px 0 0;
+  animation: revolve 4s linear infinite;
+}
+
+@keyframes revolve {
+  50% {
+    box-shadow: 20px 20px 0px 0px, -20px -20px 0px 0px, 20px -20px 0px 0px,
+      -20px 20px 0px 0px, 0px 10px 0px 0px, 10px 0px 0px 0px, -10px 0px 0px 0px,
+      0px -10px 0px 0px;
+  }
+  75% {
+    box-shadow: 20px 20px 0px 0px, -20px -20px 0px 0px, 20px -20px 0px 0px,
+      -20px 20px 0px 0px, 0px 10px 0px 0px, 10px 0px 0px 0px, -10px 0px 0px 0px,
+      0px -10px 0px 0px;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
