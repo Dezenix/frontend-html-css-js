@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Macondo&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 style="font-family: 'Cinzel', serif;color: white;">ID Card Generator</h1>
+
+    <div class="id-card">
+        <div class="id-content">
+            <div class="idfront">
+                <img id="image" src=""
+                    style="width:300px;height:400px;">
+            </div>
+            <div class="idback">
+                <h1 id="head1"> </h1>
+                <h2 id="head2"> </h2>
+                <h3 id="head3"> </h3>
+                <h4 id="head4"><a id="anchor" href=""></a></h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="form">
+        <input id="firstname" class="input" type="text" placeholder="Enter Your Name " />
+        <input id="college" class="input" type="text" placeholder=" Enter College Name " />
+        <input id="num" class="input" type="text" placeholder="Enter Roll Number" />
+        <input id="link" class="input" type="text" placeholder="Enter Your Social Id Link" />
+        <input id="pic" class="input" type="text" placeholder="URL of Your Picture" />
+        <br>
+        <button class="submit" onclick="generate()">submit</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

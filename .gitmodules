@@ -1,0 +1,3 @@
+[submodule "quiz-app"]
+	path = quiz-app
+	url = https://github.com/aditi10701/Quiz__App.git

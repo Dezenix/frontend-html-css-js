@@ -1,0 +1,43 @@
+body{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 22rem;
+  margin-top: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+} 
+
+.container span{
+  font-size:5rem;
+  margin: auto;
+}
+.bounce{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(74, 171, 255);
+  animation: jump .5s alternate infinite;
+  margin: 0 20px;
+}
+.bounce:nth-child(2){
+animation-delay: .2s;
+}
+.bounce:nth-child(3){
+animation-delay: .4s;
+}
+@keyframes jump{
+  from{
+    transform: scaleX(1.25);
+  }
+  to
+  {
+    transform: translateY(-50px) scaleX(1);
+  }
+}
