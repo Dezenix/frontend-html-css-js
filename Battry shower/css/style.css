@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(317.2deg, #1a0000 51%, #00ffff -48%);
+    background-repeat: no-repeat;
+    background-size: 120vw 120vh;
+}
+
+progress {
+    appearance: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: rgb(20, 80, 205);
+    /*height: 20px;
+width: 100%;*/
+}
+
+progress::-webkit-progress-bar {
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.batr {
+    height: 200px;
+    width: 360px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50vh;
+    left: 34vw;
+}
+
+.after {
+    height: 30px;
+    width: 100px;
+    position: relative;
+    top: 43vh;
+    left: 47vw;
+    background-color: #fff;
+}
+
+#bater {
+    color: #fff;
+    z-index: 2;
+    background: transparent;
+    border: none;
+    position: absolute;
+    bottom: 24vh;
+    left: 50vw;
+    font-size: 45px;
+}
+
+#btn {
+    height: 110px;
+    width: 320px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10vh;
+    left: 36vw;
+    background-image: linear-gradient(317.2deg, #1a0000 51%, #00ffff -48%);
+    border-radius: 40px;
+    border-right: 0.01px solid #fff;
+    border-style: solid;
+    border-width: 0.001px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Modak', cursive;
+}
+
+s {
+    color: #000;
+}
+
+@media(max-width:500px) {
+    .batr {
+        height: 100px;
+        width: 190px;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 40vh;
+        left: 25vw;
+    }
+    .after {
+        height: 15px;
+        width: 60px;
+        position: relative;
+        top: 29vh;
+        left: 42.5vw;
+        background-color: #fff;
+    }
+    #bater {
+        color: #fff;
+        z-index: 2;
+        background: transparent;
+        border: none;
+        position: absolute;
+        bottom: 23vh;
+        left: 46vw;
+        font-size: 21px;
+    }
+    #btn {
+        height: 60px;
+        width: 160px;
+        text-decoration: none;
+        position: absolute;
+        bottom: 7vh;
+        left: 30vw;
+        border-right: 0.01px solid #fff;
+        background-image: linear-gradient(317.2deg, #1a0000 51%, #00ffff -48%);
+        border-radius: 40px;
+        border-style: solid;
+        border-width: 0.001px;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #fff;
+        font-family: 'Modak', cursive;
+    }
+}

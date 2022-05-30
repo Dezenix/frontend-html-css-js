@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RealTime Battery Level</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <input value="" id="bater" disabled>
+    <div class="after"></div> <progress max="100" min="0" class="batr" id="bat" value=""></progress>
+</body>
+<script>
+    setInterval(() => {
+        navigator.getBattery()
+            .then(function(battery) {
+                var bater = document.getElementById("bater").value = battery.level * 100 + "%";
+
+
+
+
+            });
+
+        navigator.getBattery().then(function(battery) {
+            var bat = document.getElementById("bat");
+            bat.value = battery.level * 100;
+
+
+        });
+
+    }, 1000);
+
+    navigator.getBattery().then(function(battery) {
+
+        if (battery.level < 0.20) {
+            console.log(" keep your device for charge!");
+
+
+        } else {
+            console.log("battery percentage updating...")
+        }
+
+    });
+</script>
+
+</html>
