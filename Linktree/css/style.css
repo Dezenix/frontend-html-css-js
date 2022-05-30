@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+* {
+    width: 100%;
+    padding: 0;
+}
+
+body {
+    background: rgb(26, 26, 26);
+    font-family: 'Poppins', sans-serif;
+    /* height: 110vh; */
+    overflow-x: hidden;
+    color: white;
+}
+
+img {
+    width: 80%;
+    float: left;
+}
+
+.container .kotak .ytb-logo {
+    width: 250%;
+    margin-left: -3pc;
+    margin-top: -1.5pc;
+}
+
+.container .kotak .discord-logo {
+    width: 170%;
+    margin-left: -1.3pc;
+    margin-top: -1pc;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container button {
+    width: 5pc;
+    margin-top: 5pc;
+    position: absolute;
+}
+
+.container .title {
+    width: 15pc;
+    height: 7pc;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container .title h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.container .title p {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: -20px;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+}
+
+.container .link {
+    margin-top: 3.5pc;
+}
+
+.container .link .a {
+    /* border: 2px solid red; */
+    width: 40pc;
+    margin: auto;
+    /* margin-top: 2pc; */
+}
+
+.container .kotak {
+    border: 2px solid rgb(24, 24, 24);
+    background: rgb(24, 24, 24);
+    width: 40pc;
+    height: 4pc;
+    margin: auto;
+    margin-top: 2pc;
+    box-shadow: 5px 5px rgb(46, 46, 46);
+    transition: 0.5s;
+}
+
+.container .kotak:hover {
+    border: 2px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    box-shadow: 10px 10px rgb(87, 87, 87);
+    color: black;
+}
+
+.container .kotak .img {
+    width: 60px;
+    height: 60px;
+    /* border: 2px solid red; */
+    margin-top: 0.5pc;
+    margin-left: 0.5pc;
+    transition: 0.3s;
+}
+
+.container .kotak .img:hover {
+    transform: rotate(30deg);
+}
+
+.container .kotak .tautan {
+    width: 40pc;
+    height: 4.5pc;
+    /* border: 2px solid red; */
+    margin-left: 0pc;
+    margin-top: -4pc;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+.container .kotak .tautan p {
+    margin-left: -4pc;
+}
+
+.container .kotak .tautan .ytb {
+    margin-left: -7pc;
+}
+
+.container .kotak .tautan .dc {
+    margin-left: -5.5pc;
+}
+
+.container .kotak .tautan:hover {
+    letter-spacing: 20px;
+}
+
+.container .link .a .kotak .tautan .ig:hover {
+    color: red;
+}
+
+.container .link .a .kotak .tautan .sama:hover {
+    color: rgb(0, 99, 228);
+}
+
+.container .link .a .kotak .tautan .wa:hover {
+    color: green;
+}
+
+.container .link .a .kotak .tautan .ytb:hover {
+    color: rgb(255, 1, 77);
+    margin-top: 1pc;
+    margin-left: -3.4pc;
+}
+
+.container .link .a .kotak .tautan .dc:hover {
+    color: rgb(0, 204, 255);
+}
+
+footer {
+    text-align: center;
+    margin-top: 6pc;
+}
