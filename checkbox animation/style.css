@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000000;
+}
+.toggle{
+    width: 100px;
+    height: 50px;
+    background: #171616;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.toggle input{
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    cursor: pointer;
+}
+.left, .right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+    border:  15px solid rgb(7, 99, 56);
+    transform: translateX(-2px);
+    transition: all 1s;
+}
+.toggle input:checked ~ .left{
+    transform: translateY(-100%);
+}
+.right{
+    right: 0;
+    transform: translateX(100%);
+    background: #00da1d;
+    box-shadow: -10px 0 25px #00da6d70;
+    transition: all 1s;
+}
+.toggle input:checked ~ .right{
+    transform: translateY(0%);
+}
