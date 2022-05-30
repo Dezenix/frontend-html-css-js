@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #0a1e29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.stop{
+    color: #fff;
+    font-size: 5em;
+}
+.button button{
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.25em;
+    font-weight: 600 ;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#start{
+    background-color: aquamarine;
+}
+#stop{
+    background-color: yellow;
+}
+#Reset{
+    background-color: red;
+}
