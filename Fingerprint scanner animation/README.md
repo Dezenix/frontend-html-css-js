@@ -2,7 +2,7 @@
 ## tech stack 
 - HTML
 - CSS
-- JS
+
 ## LOOK
 
 
