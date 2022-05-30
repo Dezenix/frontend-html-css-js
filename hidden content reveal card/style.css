@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background: #0f0c29;  
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+}
+
+.container{
+    position: relative;
+    width: 300px;
+    background: url('https://imageio.forbes.com/specials-images/imageserve/6170e01f8d7639b95a7f2eeb/Sotheby-s-NFT-Natively-Digital-1-2-sale-Bored-Ape-Yacht-Club--8817-by-Yuga-Labs/0x0.png?format=png&width=960') center no-repeat;
+    z-index: 1;
+    background-size: cover;
+    border-radius: 20px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.container::before,
+.container::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: calc(60% + 36px);
+    background-color: gold;
+    transition: transform .5s .25s ease-in-out;
+z-index: -1;    
+}
+
+.container::before{
+    top: 0;
+    clip-path: polygon(0 0,100% 0,100% 45%,0% 100%);
+    transform: translateY(-100%);
+}
+.container::after{
+    bottom: 0;
+    clip-path: polygon(0 55%,100% 0,100% 100%,0% 100%);
+    transform: translateY(100%);
+}
+.box{
+    opacity: 0;
+    transition: opacity .25s;
+    text-align: center;
+}
+.container:hover::before,
+.container:hover::after{
+    transform: translateY(0);
+}
+.container:hover .box{
+    opacity: 1;
+    transition-delay: 1s;
+}
