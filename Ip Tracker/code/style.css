@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #fafafa;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    margin: 1rem;
+}
+h2 {
+    margin: 1rem;
+}
+.display , .location {
+    font-size: 20px;
+}
+
+.lookup {
+    border: none;
+    background: rgb(5, 30, 53);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 250ms linear;
+}
+
+.lookup:hover {
+    opacity: 0.8;
+}
+
+.geoDisplay {
+    font-size: 20px;
+}
