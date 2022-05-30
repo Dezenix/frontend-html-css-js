@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55.589" height="55.851" viewBox="0 0 55.589 55.851">
+  <defs>
+    <filter id="Oval_2" x="0" y="0" width="55.589" height="55.851" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" y1="1" x2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9752ff"/>
+      <stop offset="1" stop-color="#5e93ff"/>
+    </linearGradient>
+  </defs>
+  <g id="IC-Play-T_Copy" data-name="IC-Play-T Copy" transform="translate(7.5 5.5)">
+    <g transform="matrix(1, 0, 0, 1, -7.5, -5.5)" filter="url(#Oval_2)">
+      <ellipse id="Oval_2-2" data-name="Oval 2" cx="20.294" cy="20.425" rx="20.294" ry="20.425" transform="translate(7.5 5.5)" fill="rgba(255,255,255,0.96)"/>
+    </g>
+    <path id="Rectangle" d="M17.191,9.379a3.35,3.35,0,0,1,.789,4.565,3.228,3.228,0,0,1-.789.816l-12.2,8.79A3.108,3.108,0,0,1,.57,22.734,3.356,3.356,0,0,1,0,20.86V3.279A3.227,3.227,0,0,1,3.173,0,3.1,3.1,0,0,1,4.986.589Z" transform="translate(12.985 8.356)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

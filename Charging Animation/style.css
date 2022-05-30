@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(7, 7, 7);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.nib{
+    height: 20px;
+    width: 60px;
+    /* background: black; */
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border: 5px solid grey;
+    margin: 0 auto;
+}
+
+.case{
+    width: 200px;
+    height: 350px;
+    background: black;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    border: 4px solid grey;
+}
+
+i.fa-bolt{
+    color: whitesmoke;
+    z-index: 1;
+    top: 30px;
+    left: 40%;
+    font-size: 40px;
+    position: absolute;
+    animation: symbol 2s linear infinite;
+}
+
+.charge{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 14px;
+    animation: charging 6s linear infinite;
+}
+
+@keyframes symbol{
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes charging{
+    0%{
+        height:0%;
+        background-color:red;
+    }
+    25%{
+        height:25%;
+        background-color:orange;
+    }
+    50%{
+        height:50%;
+        background-color:yellow;
+    }
+    75%{
+        height:75%;
+        background-color:yellow-green;
+    }
+    100%{
+        height:100%;
+        background-color:green;
+    }
+}

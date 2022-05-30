@@ -1,0 +1,26 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.animation{
+    width: 7ch;
+    animation: animate 3s steps(8),blink .5s step-end infinite alternate ;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+    font-size: 4rem;
+
+}
+@keyframes animate{
+from{
+    width: 0;
+}
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
