@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="setting-div">
+
+            <span class="title">BMI CALCULATOR</span>
+            <div class="height-container">
+                <span class="height-title">HEIGHT</span>
+                <span class="height-value">175<span class="cm"> cm</span></span>
+                <input type="range" class="height-range" min="100" max="250" oninput="calculate()">
+            </div>
+
+            <div class="weight-container">
+                <span class="weight-title">WEIGHT</span>
+                <span class="weight-value">65<span class="kg"> kg</span></span>
+                <input type="range" class="weight-range" min="20" max="200" value="65" oninput="calculate()">
+            </div>
+            <button class="calculate-button" onclick="result()">CALCULATE YOUR BMI</button>
+        </div>
+        <div class="result-div">
+            <h4 class="your-result-title">Your Result</h4>
+            <span class="health_status">Normal Weight</span>
+            <span class="bmi_value">21.2</span>
+            <span class="normal_bmirange">Normal BMI range</span>
+            <span class="normalbmi_value">18.5 - 25 kg/m2</span>
+            <h4 class="status-text">You are in the Normal Weight range.</h4>
+            <button class="go-back-btn" onclick="goback()">GO BACK</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
