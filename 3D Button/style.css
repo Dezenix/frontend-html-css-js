@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.btn{
+    width: 10rem;
+    height: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.btn button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    color: rgba(0, 0, 0, 0.884);
+    cursor: pointer;
+    font-size: .95em;
+    transition: all .4s;
+    border-radius: 20px;
+}
+.btn button:hover{
+    color: white;
+}
+.element,.elements{
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: -1.5%;
+    width: 100%;
+    height: 100%;
+    background: none;
+    z-index: -2;
+    border: 5px solid  violet;
+    border-radius: 20px;
+    transition: all .4s;
+}
+.btn button:hover ~ .element{
+    background: gold;
+    border: 5px solid  gold;
+    top: -10%;
+    left: 1.5%;
+}
