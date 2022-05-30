@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="" height="80" src=".">
+    <img alt="" height="80" src="./img/256px-Icon-notepad.svg.png">
   </a>
 </p>
 <h1 align="center">Battry Shower</h1>
@@ -22,7 +22,7 @@ HTML5,CSS3,JavaScript
 
 ## It Look's Like:
 
-![image]()
+![image](./img/Screenshot%202022-05-30%20070513.png)
 
 ---
 
