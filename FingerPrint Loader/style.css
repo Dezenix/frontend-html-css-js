@@ -1,0 +1,94 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.container,
+.container * {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 15rem;
+  width: 15rem;
+  padding: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .line {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: #44ff00;
+  margin: auto;
+  animation: animate 4s
+    cubic-bezier(0.8, -0.9, 0.5, 1.9) infinite forwards;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.container .line:nth-child(1) {
+  height: calc(60px / 9 + 0 * 60px / 9);
+  width: calc(60px / 9 + 0 * 60px / 9);
+  animation-delay: calc(500ms * 1);
+}
+
+.container .line:nth-child(2) {
+  height: calc(60px / 9 + 1 * 60px / 9);
+  width: calc(60px / 9 + 1 * 60px / 9);
+  animation-delay: calc(500ms * 2);
+}
+
+.container .line:nth-child(3) {
+  height: calc(60px / 9 + 2 * 60px / 9);
+  width: calc(60px / 9 + 2 * 60px / 9);
+  animation-delay: calc(500ms * 3);
+}
+
+.container .line:nth-child(4) {
+  height: calc(60px / 9 + 3 * 60px / 9);
+  width: calc(60px / 9 + 3 * 60px / 9);
+  animation-delay: calc(500ms * 4);
+}
+
+.container .line:nth-child(5) {
+  height: calc(60px / 9 + 4 * 60px / 9);
+  width: calc(60px / 9 + 4 * 60px / 9);
+  animation-delay: calc(500ms * 5);
+}
+
+.container .line:nth-child(6) {
+  height: calc(60px / 9 + 5 * 60px / 9);
+  width: calc(60px / 9 + 5 * 60px / 9);
+  animation-delay: calc(500ms * 6);
+}
+
+.container .line:nth-child(7) {
+  height: calc(60px / 9 + 6 * 60px / 9);
+  width: calc(60px / 9 + 6 * 60px / 9);
+  animation-delay: calc(500ms * 7);
+}
+
+.container .line:nth-child(8) {
+  height: calc(60px / 9 + 7 * 60px / 9);
+  width: calc(60px / 9 + 7 * 60px / 9);
+  animation-delay: calc(500ms * 8);
+}
+
+.container .line:nth-child(9) {
+  height: calc(60px / 9 + 8 * 60px / 9);
+  width: calc(60px / 9 + 8 * 60px / 9);
+  animation-delay: calc(500ms * 9);
+}
+
+@keyframes animate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
