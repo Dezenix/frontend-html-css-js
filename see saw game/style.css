@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ebd4d4;
+  }
+  .object {
+    position: relative;
+    bottom: 100px;
+    left: calc(100% - 70px);
+    width: 100px;
+    height: 100px;
+    background: #affff2;
+    border-radius: 50%;
+    animation: play 3s ease-in-out 1s infinite alternate;
+  }
+ 
+  .sitting {
+    width: 700px;
+    height: 25px;
+    background: silver;
+    border-radius: 50px;
+    transform: rotate(35deg);
+    animation:bar 3s ease-in-out 1s infinite alternate;
+  }
+  @keyframes bar {
+    from {
+      transform: rotate(-10deg);
+    }
+    to {
+      transform: rotate(10deg);
+    }
+  }
+  @keyframes play {
+    from {
+      left: calc(100% - 70px);
+      transform: rotate(360deg);
+    }
+    to {
+      left: calc(0% - 35px);
+      transform: rotate(0deg);
+    }
+  }
+ 
