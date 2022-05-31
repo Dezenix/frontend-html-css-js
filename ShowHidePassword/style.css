@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+.inputBox {
+  position: relative;
+  width: 400px;
+  height: 60px;
+}
+.inputBox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  box-sizing: border-box;
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.05),
+    inset -4px -4px 10px rgba(255, 255, 255, 1),
+    4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+.inputBox input::placeholder {
+  color: rgb(146, 140, 140);
+}
+#toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 45px;
+  height: 30px;
+  background-size: cover;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
