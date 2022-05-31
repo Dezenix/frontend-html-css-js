@@ -1,0 +1,127 @@
+body {
+    background-color: #000000;
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a:nth-child(1) {
+    animation: one 1.5s ease-in-out infinite alternate;
+  }
+  
+  a:nth-child(2) {
+    animation: two 1.5s ease-in-out infinite alternate;
+  }
+  
+  a:nth-child(3) {
+    animation: three 1.5s ease-in-out infinite alternate;
+  }
+  
+  a:nth-child(4) {
+    animation: four 1.5s ease-in-out infinite alternate;
+  }
+  
+  a:nth-child(5) {
+    animation: five 1.5s ease-in-out infinite alternate;
+  }
+  
+  a:nth-child(6) {
+    animation: six 1.5s ease-in-out infinite alternate;
+  }
+  a:nth-child(7) {
+    animation: seven 1.5s ease-in-out infinite alternate;
+  }
+  
+  a {
+    text-align: center;
+    font-size: 10rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  
+  @keyframes one {
+    from {
+      text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #11dfff,
+        0 0 70px #11dfff, 0 0 80px #11dfff, 0 0 100px #11dfff, 0 0 150px #11dfff;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 20px #11dfff,
+        0 0 35px #11dfff, 0 0 40px #11dfff, 0 0 50px #11dfff, 0 0 75px #11dfff;
+    }
+  }
+  
+  @keyframes two {
+    from {
+      text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px pink,
+        0 0 70px pink, 0 0 80px pink, 0 0 100px pink, 0 0 150px pink;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 20px pink,
+        0 0 35px pink, 0 0 40px pink, 0 0 50px pink, 0 0 75px pink;
+    }
+  }
+  
+  @keyframes three {
+    from {
+      text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px gold,
+        0 0 70px gold, 0 0 80px gold, 0 0 100px gold, 0 0 150px gold;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 20px gold,
+        0 0 35px gold, 0 0 40px gold, 0 0 50px gold, 0 0 75px gold;
+    }
+  }
+  
+  @keyframes four {
+    from {
+      text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px purple,
+        0 0 70px purple, 0 0 80px purple, 0 0 100px purple, 0 0 150px purple;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 20px purple,
+        0 0 35px purple, 0 0 40px purple, 0 0 50px purple, 0 0 75px purple;
+    }
+  }
+  
+  @keyframes five {
+    from {
+      text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ff11,
+        0 0 70px #00ff11, 0 0 80px #00ff11, 0 0 100px #00ff11, 0 0 150px #00ff11;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 20px #00ff11,
+        0 0 35px #00ff11, 0 0 40px #00ff11, 0 0 50px #00ff11, 0 0 75px #00ff11;
+    }
+  }
+  
+  @keyframes six {
+    from {
+      text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+        0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 20px #ff00de,
+        0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+  }
+  @keyframes seven {
+    from {
+      text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0effcb,
+        0 0 70px #0effcb, 0 0 80px #0effcb, 0 0 100px #0effcb, 0 0 150px #0effcb;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 20px #0effcb,
+        0 0 35px #0effcb, 0 0 40px #0effcb, 0 0 50px #0effcb, 0 0 75px #0effcb;
+    }
+  }
+
+  
+  @media (max-width: 650px) {
+    p {
+      font-size: 3rem;
+    }
+  }
+  
