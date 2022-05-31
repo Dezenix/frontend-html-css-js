@@ -1,0 +1,109 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.info-wrapper {
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.text-wrapper {
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+}
+
+textarea {
+	background: rgb(255, 174, 174);
+	color: rgb(0, 0, 0);
+	width: 100%;
+	height: 90%;
+	padding: 20px;
+	font-size: 1.5rem;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	resize: none;
+	border: none;
+}
+
+button {
+	border: none;
+	color: #fff;
+	background-color: #000;
+	padding: 15px 40px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	border: 1px solid #000;
+	background: rgb(255, 174, 174);
+	color: #000;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.box {
+	border: 2px solid #000;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 200px;
+}
+
+.box h2 {
+	font-size: 4rem;
+	font-weight: 100;
+	color: #000000;
+}
+
+.box:hover h2,
+.box:hover,
+.box:hover p {
+	background-color: #000;
+	color: #fff;
+	scale: 2;
+}
+
+.box p {
+	font-size: 20px;
+	background-color: #fff;
+	color: #283618;
+	padding: 5px 20px;
+	border-radius: 27px;
+}
+
+@media screen and (max-width: 768px) {
+	.info-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.info-wrapper {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 40px;
+	}
+}
