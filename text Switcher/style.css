@@ -1,0 +1,63 @@
+body {
+  margin:0;
+  padding: 0;
+  text-align:center;
+}
+
+#container {
+  color:rgb(255, 123, 0);
+  font-size:40px;
+  margin-top:500px;  
+  position:fixed;
+  display:block;
+  text-transform: uppercase;
+  width:100%;
+  bottom:45%;
+}
+
+#change {
+  height:80px;
+  overflow:hidden;
+}
+
+#change > div > div {
+  color:#fff;
+  padding:10px 15px;
+  height:50px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#change div:first-child {
+  animation: change 5s linear infinite;
+}
+
+#change div div {
+  background:#0069fc;
+}
+#change div:first-child div {
+  background:#d2f34e;
+}
+#change div:last-child div {
+  background:#fc5e7d;
+}
+
+@keyframes change {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  position:fixed;
+  width:100%;
+  bottom:40px;
+  font-size:4rem;
+  color:rgb(32, 29, 29);
+  margin-top:400px;
+}
