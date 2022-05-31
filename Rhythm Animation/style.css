@@ -1,0 +1,53 @@
+
+body {
+  background: rgb(0, 0, 0);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35rem;
+}
+
+.content {
+  width: 2rem;
+  height: 5rem;
+  border-radius: 1rem;
+  background-color: #e14141;
+}
+
+.content:nth-child(1) {
+  animation: dance 0.8s .5s infinite;
+}
+.content:nth-child(2) {
+  animation: dance 0.8s 0.25s infinite;
+}
+.content:nth-child(3) {
+  animation: dance 0.8s infinite;
+}
+.content:nth-child(4) {
+  animation: dance 0.8s 0.25s infinite;
+}
+.content:nth-child(5) {
+  animation: dance 0.8s 0.5s infinite;
+}
+
+@keyframes dance {
+  0% {
+    height: 5rem;
+  }
+  50% {
+    height: 12rem;
+  }
+  100% {
+    height: 5rem;
+  }
+}
