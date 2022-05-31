@@ -1,0 +1,21 @@
+.body {
+    background-color: aqua;
+}
+
+.grid {
+    width: 606px;
+    height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    border: solid black 1px;
+}
+
+.mole {
+    background-image: url("../img/mole.jpg");
+    background-size: cover;
+}
