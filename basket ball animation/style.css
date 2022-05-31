@@ -1,0 +1,53 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container {
+  height: 200px;
+  position: relative;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-image: radial-gradient(circle at -10px 20px, transparent 47px, black 50px, black 25px, transparent 0), radial-gradient(circle at 110px 70px, transparent 47px, black 50px, transparent 0), linear-gradient(110deg, transparent 60px, black 63px, transparent 0), linear-gradient(18deg, transparent 56px, black 60px, transparent 0);
+  animation: jump .5s cubic-bezier(.8, -.5, .2, 1.4) infinite alternate;
+
+}
+
+.shadow {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  z-index: -1;
+  animation: jump2 .5s cubic-bezier(.8, -.5, .2, 1.4) infinite alternate;
+}
+
+@keyframes jump {
+  100% {
+    transform: translate3d(0, 100px, 0);
+  }
+}
+
+@keyframes jump2 {
+  0% {
+    transform: rotateX(80deg);
+    scale: 3d(.5, .5, 10);
+    background-color: black;
+  }
+
+  100% {
+    transform: rotateX(80deg);
+    scale: 3d(.5, .5, 10);
+    background-color: black;
+  }
+}
