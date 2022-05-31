@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* overflow:hidden; */
+}
+img{
+    cursor: pointer;
+}
+#logo{
+    width: 4rem;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    z-index: 5;
+    position: fixed;
+    left: 10%;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(132, 56, 56); */
+    width: 40%;
+}
+nav ul li {
+    list-style: none;
+    color: rgb(181, 181, 181);
+    cursor: pointer;
+}
+nav ul li:hover {
+    color: white;
+}
+nav ul li img{
+    width: 30px;
+}
+.one{
+    height: 80vh;
+    /* background-color: rgb(193, 123, 32); */
+    position: relative;
+}
+.one img{
+    width: 100%;
+    position: relative;
+}
+#coc{
+    position: absolute;
+    top: 50%;
+    width: 9rem;
+    left: 45%;
+}
+.two{
+    /* background-color: aquamarine; */
+position: relative;
+margin-top: 13rem;
+height: 80vh;
+}
+#half{
+    position: absolute;
+    width: 922px;
+    height: 458px;
+    left: -260px;
+    margin-top: 3rem;
+}
+.wording{
+    /* background-color: blue; */
+    height: 12rem;
+    margin-left: 42rem;
+    margin-top: 4rem;
+    /* text-align: center; */
+}
+.wording p{
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: black;
+}
+h1{
+    margin-left: 90px;
+}
+.butts{
+    display: flex;
+    /* background-color: blue; */
+    margin-left: 42rem;
+    margin-top: 8rem;
+}
+.butts img{
+    width: 12rem;
+margin-right: 30px;
+}
+.three{
+    /* background-color: aqua; */
+    margin-top: 7rem;
+    padding: 0 10%;
+}
+.wording2{
+    /* background-color: blue; */
+    height: 12rem;
+    margin-top: 4rem;
+    width: 40%;
+}
+.wording2 p{
+    margin-top: 40px;
+    font-size: 1.1rem;
+
+    color: black;
+}
+.three img{
+    width: 80vw;
+}
+.four{
+    /* background-color: purple; */
+    margin-top: 29rem;
+    height: 80vh;
+    position: relative;
+}
+.four img{
+    width: 100%;
+    height: 100%;
+}
+
+.wording3{
+    /* background-color: blue; */
+    height: 12rem;
+    margin-left: 45rem;
+    position: absolute;
+    top: 15%;
+width: 40%;
+color: aliceblue;
+}
+.wording3 p{
+    margin-top: 40px;
+    font-size: 1.1rem;
+
+    color: rgb(255, 255, 255);
+}
+.five{
+    padding: 6rem 7rem;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$            footer */
+
+footer{
+    height: 80vh;
+    background-color: rgb(0, 0, 0);
+    padding: 1rem 15rem;
+    height: 60vh;
+    /* display: flex; */
+}
+
+.icons i{
+    margin: 30px 20px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.linkks{
+    display: flex;
+    margin:40px 100px;
+ color: white;
+}
+.linkks ul{
+list-style: none;
+margin-left: 40px;
+display: flex;
+flex-direction: row;
+}
+.linkks ul li{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+}
+.linkks ul li:hover{
+
+    cursor: pointer;
+}
+p{
+    margin-top: 120px;
+    width: 60%;
+    margin-left: 100px;
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.icons2{
+    position: absolute;
+    right: 10px;
+    /* bottom: 10px; */
+    font-size: 30px;
+}
+
+.icons2 img{
+    margin: 30px 20px;
+    /* font-size: 30px; */
+    width: 40px;
+    color: grey;
+}
+
+.buttss img{
+    width: 10rem;
+    
+}
