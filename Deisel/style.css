@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  z-index: 7;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: rgb(134, 160, 160); */
+}
+
+nav ul li {
+  cursor: pointer;
+  list-style: none;
+}
+
+/* ####################################################### */
+.swiper {
+  width: 100%;
+  height: 90vh;
+  margin-top: 4rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: rgb(203, 11, 11); */
+  /* height: 70vh; */
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 2rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper2 {
+  height: 50vh;
+  width: 50%;
+}
+
+.two {
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+}
+
+.sideWords {
+  /* background-color: rgb(204, 126, 30); */
+  display: inline-block;
+  margin-left: 8rem;
+}
+
+.shop {
+  background-color: black;
+  color: aliceblue;
+  margin-top: 30px;
+  padding: 10px 20px;
+}
+
+.three {
+  /* background-color: brown; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.three img {
+  width: 37rem;
+}
+
+.mySwiper3 {
+  height: 30vh;
+  width: 80%;
+}
+
+.full {
+  /* background-color: purple; */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.half {
+  /* background-color: pink; */
+  text-align: center;
+  width: 20%;
+}
+
+.half img {
+  width: 7rem;
+}
+
+.banner {
+  width: 100%;
+  height: 20%;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.wordd {
+  position: absolute;
+  /* background-color: rgba(127, 255, 212, 0.481); */
+  color: aliceblue;
+  top: 30%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: normal;
+  letter-spacing: 1.2px;
+}
+
+.pair {
+  background-color: aliceblue;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+}
+
+.pair:hover {
+  background-color: transparent;
+  color: aliceblue;
+  border: 1px solid white;
+}
+
+.six {
+  /* background-color: green; */
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.left {
+  background-color: rgb(0, 0, 0);
+  height: 30vh;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding:20px 190px;
+  color: aliceblue;
+}
+input{
+  font-size: 30px;
+  margin-top: 20px;
+}
+.xx{
+  background-color: black;
+  border: 1px solid white;
+  color: aliceblue;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.right {
+  /* background-color: rgb(79, 114, 145); */
+  height: 30vh;
+  width: 50%;
+  padding:20px 60px;
+text-align: center;
+line-height: 100px;
+}
