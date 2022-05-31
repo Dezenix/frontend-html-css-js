@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.strip {
+  width: 60rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dots {
+  width: 5rem;
+  height:5rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.dots:nth-child(1) {
+  background-color: blue;
+}
+.dots:nth-child(2) {
+  background-color: green;
+}
+.dots:nth-child(3) {
+  background-color: yellow;
+}
+.dots:nth-child(4) {
+  background-color: red;
+}
+.dots:nth-child(5) {
+  background-color: pink;
+}
+
+.dots::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: glow 3s ease-out infinite;
+}
+
+.dots:nth-child(1)::before {
+  background-color: blue;
+}
+.dots:nth-child(2)::before {
+  background-color: green;
+  animation-delay: 0.2s;
+}
+.dots:nth-child(3)::before {
+  background-color: yellow;
+  animation-delay: 0.4s;
+}
+.dots:nth-child(4)::before {
+  background-color: red;
+  animation-delay: 0.6s;
+}
+.dots:nth-child(5)::before {
+  background-color: pink;
+  animation-delay: 0.8s;
+}
+
+@keyframes glow {
+  0% {
+    transform: scale(1);
+  }
+
+  50%,
+  75% {
+    transform: scale(2.5);
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
