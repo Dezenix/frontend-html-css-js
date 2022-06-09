@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 50px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="title" role="contentinfo">
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial.No credit card required.</p>
+  </div>
+
+  <div class="wrapper">
+    <div class="flex1">
+      <div  class="flex1-smal order1"><span id="people">100</span>K PAGEVIEWS</div>
+      <input type="range" min="1" max="100" value="50" class="order2"> 
+      <div class="order3"><span class="Ybig">$ <span id="Ymoney"></span></span><span class="flex1-big">$ <span id="money">16.00</span></span><span class="flex1-smal">/ month</span></div>
+    </div>
+
+    <div class="flex3">
+      <div class="normal flex3-s"><div>Monthly Billing </div></div>
+      <div class=" flex3-s"><div class="border-toggle"><div></div></div></div>
+      <div class="normal  flex3-s"><div>Yearly Billing</div></div>
+      <div class="discount  flex3-s"><div>25% discount</div></div>
+    </div>
+    <div class="line"></div>
+    <div class="flex4">
+      <div class="flex4-wrapper">
+        <div class="flex4-font"><img src="./images/icon-check.svg" alt="check"> <span>Unlimited websites</span></div>
+        <div  class="flex4-font"><img src="./images/icon-check.svg" alt="check"> <span>100% data ownership</span></div>
+        <div  class="flex4-font"><img src="./images/icon-check.svg" alt="check"> <span>email reports</span></div>
+      </div>
+      <div class="flex4-wrapper">
+        <div><button type="button">Start my trial</button></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bawah"></div>
+</body>
+<script src="script.js"></script>
+</html>
